@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "formed=false": { "model": "herbalcurative:block/lumistone" },
-    "facing=north,formed=true": { "model": "herbalcurative:block/cauldron" },
-    "facing=south,formed=true": { "model": "herbalcurative:block/cauldron", "y": 180 },
-    "facing=east,formed=true":  { "model": "herbalcurative:block/cauldron", "y": 90 },
-    "facing=west,formed=true":  { "model": "herbalcurative:block/cauldron", "y": 270 }
-  }
-}

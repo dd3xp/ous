@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.entity.FlowweaveProjectile;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -11,7 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModEntityTypes {
     
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = 
-            DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, OusCommon.MOD_ID);
     
     public static final DeferredHolder<EntityType<?>, EntityType<FlowweaveProjectile>> FLOWWEAVE_PROJECTILE =
             ENTITY_TYPES.register("flowweave_projectile", () -> 

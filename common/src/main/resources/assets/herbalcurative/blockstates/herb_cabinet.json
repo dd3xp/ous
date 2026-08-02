@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "formed=false": { "model": "herbalcurative:block/red_cherry_log" },
-    "facing=north,formed=true": { "model": "herbalcurative:block/herb_cabinet" },
-    "facing=south,formed=true": { "model": "herbalcurative:block/herb_cabinet", "y": 180 },
-    "facing=east,formed=true":  { "model": "herbalcurative:block/herb_cabinet", "y": 90 },
-    "facing=west,formed=true":  { "model": "herbalcurative:block/herb_cabinet", "y": 270 }
-  }
-}

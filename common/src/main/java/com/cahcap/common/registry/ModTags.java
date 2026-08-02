@@ -1,6 +1,6 @@
 package com.cahcap.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
@@ -18,7 +18,7 @@ public class ModTags {
          */
         public static final TagKey<Block> HEAT_SOURCES = TagKey.create(
                 Registries.BLOCK,
-                ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "heat_sources")
+                ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "heat_sources")
         );
     }
 }

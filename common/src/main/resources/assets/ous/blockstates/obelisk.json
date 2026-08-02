@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "formed=false": { "model": "ous:block/lumistone" },
+    "facing=north,formed=true": { "model": "ous:block/obelisk" },
+    "facing=south,formed=true": { "model": "ous:block/obelisk", "y": 180 },
+    "facing=east,formed=true":  { "model": "ous:block/obelisk", "y": 90 },
+    "facing=west,formed=true":  { "model": "ous:block/obelisk", "y": 270 }
+  }
+}

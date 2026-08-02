@@ -46,7 +46,7 @@ public class ShelfBlock extends BaseEntityBlock {
     
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/shelf.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/shelf.json");
     
     public ShelfBlock(Properties properties) {
         super(properties);

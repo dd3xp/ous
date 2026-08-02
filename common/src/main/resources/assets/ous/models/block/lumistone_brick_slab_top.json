@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ous:block/lumistone_bricks",
+    "top": "ous:block/lumistone_bricks",
+    "side": "ous:block/lumistone_bricks"
+  }
+}

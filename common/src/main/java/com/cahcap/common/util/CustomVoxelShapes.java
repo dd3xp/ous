@@ -165,7 +165,7 @@ public class CustomVoxelShapes {
      * then clips each AABB into per-block-position boxes. Group names in
      * {@code excludeGroups} are skipped (matches VoxelShapeProcessor behavior).
      *
-     * @param modelResourcePath classpath path, e.g. "/assets/herbalcurative/models/block/cauldron.json"
+     * @param modelResourcePath classpath path, e.g. "/assets/ous/models/block/cauldron.json"
      * @param excludeGroups     group names (from Blockbench "groups" tree) whose elements are omitted
      */
     public static CustomVoxelShapes loadFromModel(String modelResourcePath, Set<String> excludeGroups) {

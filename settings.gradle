@@ -8,7 +8,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'herbalcurative'
+rootProject.name = 'ous'
 
 include 'common'
 include 'neoforge'

@@ -66,7 +66,7 @@ public class KilnCatalystRecipeBuilder {
         }
 
         KilnCatalystRecipe recipe = new KilnCatalystRecipe(ingredient, affectedInputs, outputMultiplier, speedMultiplier, usesPerItem);
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath("herbalcurative", "kiln_catalyst/" + name);
+        ResourceLocation id = ResourceLocation.fromNamespaceAndPath("ous", "kiln_catalyst/" + name);
         output.accept(id, recipe, null);
     }
 }

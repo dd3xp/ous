@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.worldgen;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.datagen.tags.ModBiomeTagsProvider;
 import com.cahcap.neoforge.common.registry.ModFeatures;
 import net.minecraft.core.HolderGetter;
@@ -114,22 +114,22 @@ public class ModWorldGenProvider {
     
     private static ResourceKey<ConfiguredFeature<?, ?>> createConfiguredFeatureKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, name));
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, name));
     }
     
     private static ResourceKey<PlacedFeature> createPlacedFeatureKey(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, name));
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, name));
     }
     
     private static ResourceKey<BiomeModifier> createBiomeModifierKey(String name) {
         return ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, name));
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, name));
     }
     
     private static TagKey<Biome> createBiomeTag(String name) {
         return TagKey.create(Registries.BIOME, 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, name));
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, name));
     }
     
     // ==================== Data Provider Registration ====================
@@ -146,7 +146,7 @@ public class ModWorldGenProvider {
 
         return java.util.List.of(
                 new DatapackBuiltinEntriesProvider(
-                        output, lookupProvider, registryBuilder, Set.of(HerbalCurativeCommon.MOD_ID)),
+                        output, lookupProvider, registryBuilder, Set.of(OusCommon.MOD_ID)),
                 new ModBiomeTagsProvider(output, lookupProvider, existingFileHelper));
     }
     

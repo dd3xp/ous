@@ -32,7 +32,7 @@ loom {
             data()
             programArg '--all'
             programArg '--mod'
-            programArg 'herbalcurative'
+            programArg 'ous'
             programArg '--output'
             programArg file("src/main/generated/resources").absolutePath
             programArg '--existing'

@@ -1,6 +1,6 @@
 package com.cahcap.common.recipe;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -290,13 +290,13 @@ public class CauldronBrewingRecipe implements Recipe<RecipeInput> {
     // Recipe Type
     public static class Type implements RecipeType<CauldronBrewingRecipe> {
         public static final Type INSTANCE = new Type();
-        public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_brewing");
+        public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_brewing");
     }
     
     // Recipe Serializer
     public static class Serializer implements RecipeSerializer<CauldronBrewingRecipe> {
         public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_brewing");
+        public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_brewing");
         
         private static final MapCodec<CauldronBrewingRecipe> CODEC = RecordCodecBuilder.mapCodec(instance ->
             instance.group(

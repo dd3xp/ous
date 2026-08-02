@@ -61,7 +61,7 @@ public class IncenseBurnerBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     
     private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel(
-            "/assets/herbalcurative/models/block/incense_burner.json", java.util.Set.of("Incense"));
+            "/assets/ous/models/block/incense_burner.json", java.util.Set.of("Incense"));
     
     public IncenseBurnerBlock(Properties properties) {
         super(properties);

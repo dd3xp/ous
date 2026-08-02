@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.registry.ModBlocks;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
@@ -15,7 +15,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 /**
  * Client-side handler for herb flower particle effects
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbFlowerParticleHandler {
 
     @SubscribeEvent

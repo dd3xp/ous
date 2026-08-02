@@ -37,7 +37,7 @@ public class KilnBlock extends MultiblockPartBlock {
 
     public static final BooleanProperty LIT = BooleanProperty.create("lit");
 
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/kiln.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/kiln.json");
     public static final IntegerProperty POSITION = IntegerProperty.create("position", 0, SHAPES.totalPositions() - 1);
 
     public KilnBlock(Properties properties) {

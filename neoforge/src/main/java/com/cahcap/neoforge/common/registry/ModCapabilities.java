@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.WorkbenchBlock;
 import com.cahcap.common.blockentity.cauldron.CauldronBlockEntity;
 import com.cahcap.common.blockentity.HerbBasketBlockEntity;
@@ -31,7 +31,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 /**
  * Registers capabilities for block entities
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ModCapabilities {
     
     @SubscribeEvent

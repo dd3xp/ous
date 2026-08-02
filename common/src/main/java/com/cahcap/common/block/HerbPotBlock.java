@@ -61,7 +61,7 @@ public class HerbPotBlock extends BaseEntityBlock {
     
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/herb_pot.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/herb_pot.json");
     
     public HerbPotBlock(Properties properties) {
         super(properties);

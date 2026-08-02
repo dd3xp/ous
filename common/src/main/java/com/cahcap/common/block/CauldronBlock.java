@@ -36,7 +36,7 @@ public class CauldronBlock extends MultiblockPartBlock {
 
     public static final MapCodec<CauldronBlock> CODEC = simpleCodec(CauldronBlock::new);
 
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/cauldron.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/cauldron.json");
     public static final IntegerProperty POSITION = IntegerProperty.create("position", 0, SHAPES.totalPositions() - 1);
 
     public CauldronBlock(Properties properties) {

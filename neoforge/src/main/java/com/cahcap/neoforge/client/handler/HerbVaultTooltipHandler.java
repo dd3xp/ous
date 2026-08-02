@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.HerbVaultBlock;
 import com.cahcap.common.blockentity.HerbVaultBlockEntity;
 import com.cahcap.common.util.HerbRegistry;
@@ -22,7 +22,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
  * Client-side handler for rendering Herb Vault HUD tooltip.
  * Shows herb icon and count below crosshair when looking at a herb slot on the front face.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbVaultTooltipHandler extends TooltipHandler {
 
     private static final HerbVaultTooltipHandler INSTANCE = new HerbVaultTooltipHandler();

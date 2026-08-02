@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.*;
 import com.cahcap.common.multiblock.Multiblock;
 import com.cahcap.neoforge.common.block.HerbCabinetBlock;
@@ -34,7 +34,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(HerbalCurativeCommon.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(OusCommon.MOD_ID);
 
     // ==================== Herb Flowers ====================
     

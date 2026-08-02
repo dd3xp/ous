@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,11 +11,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModCreativeTabs {
     
     public static final DeferredRegister<CreativeModeTab> TABS = 
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, OusCommon.MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> HERBAL_CURATIVE_TAB = TABS.register("herbalcurative_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> OUS_TAB = TABS.register("ous_tab",
             () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup." + HerbalCurativeCommon.MOD_ID))
+                    .title(Component.translatable("itemGroup." + OusCommon.MOD_ID))
                     .icon(() -> new ItemStack(ModItems.FLOWWEAVE_RING.get()))
                     .displayItems((parameters, output) -> {
                         // Herb Products

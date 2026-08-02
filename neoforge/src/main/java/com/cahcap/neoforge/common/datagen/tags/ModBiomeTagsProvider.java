@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.tags;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.datagen.worldgen.ModWorldGenProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -17,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModBiomeTagsProvider extends net.minecraft.data.tags.BiomeTagsProvider {
     
     public ModBiomeTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, HerbalCurativeCommon.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, OusCommon.MOD_ID, existingFileHelper);
     }
     
     @Override

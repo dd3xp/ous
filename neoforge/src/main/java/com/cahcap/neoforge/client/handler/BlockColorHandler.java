@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.CrystalPlantBlock;
 import com.cahcap.common.item.IncensePowderItem;
 import com.cahcap.neoforge.common.registry.ModBlocks;
@@ -18,7 +18,7 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 /**
  * Block and Item color handlers for biome-based coloring
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class BlockColorHandler {
     
     @SubscribeEvent

@@ -11,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * WTHIT icon provider for Herbal Curative blocks.
+ * WTHIT icon provider for Once Upon a Season blocks.
  * Provides custom icons for multiblock structures and special blocks.
  */
 enum HerbCabinetComponentProvider implements IBlockComponentProvider {

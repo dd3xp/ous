@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ous:block/shelf" },
+    "facing=south": { "model": "ous:block/shelf", "y": 180 },
+    "facing=west": { "model": "ous:block/shelf", "y": 270 },
+    "facing=east": { "model": "ous:block/shelf", "y": 90 }
+  }
+}

@@ -1,6 +1,6 @@
 package com.cahcap.client.renderer;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.blockentity.IncenseBurnerBlockEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -22,7 +22,7 @@ import net.minecraft.world.level.LightLayer;
 public class IncenseBurnerRenderer implements BlockEntityRenderer<IncenseBurnerBlockEntity> {
     
     private static final ResourceLocation POWDER_LAYER_TEXTURE = 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "textures/block/incense_powder_layer.png");
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "textures/block/incense_powder_layer.png");
     
     private static final float LAYER_Y = 3.01f / 16f;
     

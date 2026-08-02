@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.tags;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.registry.ModTags;
 import com.cahcap.neoforge.common.registry.ModBlocks;
 import net.minecraft.core.HolderLookup;
@@ -27,7 +27,7 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
             ResourceLocation.fromNamespaceAndPath("c", "stone_bricks"));
     
     public ModBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, HerbalCurativeCommon.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, OusCommon.MOD_ID, existingFileHelper);
     }
     
     @Override
@@ -215,7 +215,7 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
         
         // ==================== Mod custom tags ====================
         
-        // herbalcurative:heat_sources - Blocks that provide heat for cauldrons and incense burners
+        // ous:heat_sources - Blocks that provide heat for cauldrons and incense burners
         this.tag(ModTags.Blocks.HEAT_SOURCES).add(
             net.minecraft.world.level.block.Blocks.FIRE,
             net.minecraft.world.level.block.Blocks.SOUL_FIRE,

@@ -1,6 +1,6 @@
 package com.cahcap.common.compat.jade;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.registry.ModRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -17,7 +17,7 @@ import org.jetbrains.annotations.Nullable;
  * Jade icon provider for Obelisk multiblock.
  */
 public class ObeliskComponentProvider implements IBlockComponentProvider {
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "obelisk_provider");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "obelisk_provider");
 
     @Override
     public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.blockentity.cauldron.CauldronBlockEntity;
 import com.cahcap.common.blockentity.cauldron.CauldronFluid;
 import com.cahcap.common.registry.ModRegistries;
@@ -29,7 +29,7 @@ import java.util.Map;
  * Client-side handler for rendering Cauldron HUD tooltip.
  * Shows materials when not brewing, shows herbs when brewing.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class CauldronTooltipHandler extends TooltipHandler {
 
     private static final CauldronTooltipHandler INSTANCE = new CauldronTooltipHandler();

@@ -232,7 +232,7 @@ public class HerbBoxItem extends Item {
         
         for (int i = 0; i < HerbRegistry.getHerbCount(); i++) {
             String key = HerbRegistry.getHerbKey(i);
-            addHerbTooltip(tooltip, stack, key, "item.herbalcurative." + key);
+            addHerbTooltip(tooltip, stack, key, "item.ous." + key);
         }
     }
     

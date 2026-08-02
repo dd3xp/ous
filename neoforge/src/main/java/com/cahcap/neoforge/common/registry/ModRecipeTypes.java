@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.CauldronBrewingRecipe;
 import com.cahcap.common.recipe.CauldronInfusingRecipe;
 import com.cahcap.common.recipe.HerbalBlendingRecipe;
@@ -24,13 +24,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModRecipeTypes {
     
     public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES = 
-            DeferredRegister.create(Registries.RECIPE_TYPE, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(Registries.RECIPE_TYPE, OusCommon.MOD_ID);
     
     public static final DeferredHolder<RecipeType<?>, RecipeType<HerbalBlendingRecipe>> HERBAL_BLENDING = 
             RECIPE_TYPES.register("herbal_blending", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "herbal_blending").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "herbal_blending").toString();
                 }
             });
     
@@ -38,7 +38,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("workbench", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "workbench").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "workbench").toString();
                 }
             });
     
@@ -46,7 +46,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("cauldron_infusing", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_infusing").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_infusing").toString();
                 }
             });
     
@@ -54,7 +54,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("cauldron_brewing", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_brewing").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_brewing").toString();
                 }
             });
     
@@ -62,7 +62,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("herb_pot_growing", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "herb_pot_growing").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "herb_pot_growing").toString();
                 }
             });
     
@@ -70,7 +70,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("incense_burning", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "incense_burning").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "incense_burning").toString();
                 }
             });
 
@@ -78,7 +78,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("kiln_smelting", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "kiln_smelting").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "kiln_smelting").toString();
                 }
             });
 
@@ -86,7 +86,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("kiln_catalyst", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "kiln_catalyst").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "kiln_catalyst").toString();
                 }
             });
 
@@ -94,7 +94,7 @@ public class ModRecipeTypes {
             RECIPE_TYPES.register("obelisk_offering", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "obelisk_offering").toString();
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "obelisk_offering").toString();
                 }
             });
 

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.registry.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -23,7 +23,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
  * 
  * @EventBusSubscriber annotation removed because all events are currently disabled
  */
-// @EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID)
+// @EventBusSubscriber(modid = OusCommon.MOD_ID)
 public class LeafweaveArmorHandler {
 
     // ==================== BOOTS EFFECTS - PRESERVED FOR JOURNAL IMPLEMENTATION ====================
@@ -33,7 +33,7 @@ public class LeafweaveArmorHandler {
     /*
     // ResourceLocation for the step height attribute modifier (1.21 uses ResourceLocation instead of UUID)
     private static final ResourceLocation STEP_HEIGHT_MODIFIER_ID = 
-        ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "leafweave_boots_step_height");
+        ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "leafweave_boots_step_height");
 
     /**
      * Handle Leafweave Boots special effects (for players only)

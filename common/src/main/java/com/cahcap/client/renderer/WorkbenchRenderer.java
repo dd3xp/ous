@@ -22,7 +22,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.LightLayer;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 
 import java.util.HashMap;
 import java.util.List;
@@ -52,7 +52,7 @@ public class WorkbenchRenderer implements BlockEntityRenderer<WorkbenchBlockEnti
     private static final float PIVOT_X = 8f / 16f, PIVOT_Y = 0f, PIVOT_Z = 8f / 16f;
     
     static {
-        var mod = HerbalCurativeCommon.MOD_ID;
+        var mod = OusCommon.MOD_ID;
         TOOL_MODEL_MAP.put(ResourceLocation.fromNamespaceAndPath(mod, "cutting_knife"),
                 ResourceLocation.fromNamespaceAndPath(mod, "block/workbench_tool_cutting_knife"));
         TOOL_MODEL_MAP.put(ResourceLocation.fromNamespaceAndPath(mod, "feather_quill"),

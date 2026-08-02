@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.HerbCabinetBlock;
 import com.cahcap.common.blockentity.HerbCabinetBlockEntity;
 import com.cahcap.neoforge.common.registry.ModItems;
@@ -20,7 +20,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /**
  * Client-side handler for rendering Herb Cabinet HUD tooltip
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbCabinetTooltipHandler extends TooltipHandler {
 
     private static final HerbCabinetTooltipHandler INSTANCE = new HerbCabinetTooltipHandler();

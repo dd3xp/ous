@@ -1,6 +1,6 @@
 package com.cahcap.common.compat.jade;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.registry.ModRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -18,7 +18,7 @@ import org.jetbrains.annotations.Nullable;
  * Only shows the kiln item icon — detailed info is in the HUD tooltip.
  */
 public class KilnComponentProvider implements IBlockComponentProvider {
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "kiln_provider");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "kiln_provider");
 
     @Override
     public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {

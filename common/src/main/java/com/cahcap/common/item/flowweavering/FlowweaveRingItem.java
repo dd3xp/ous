@@ -311,7 +311,7 @@ public class FlowweaveRingItem extends Item {
                 CastingMode newMode = cycleMode(stack);
                 // Send message to player about mode change
                 player.displayClientMessage(
-                    Component.translatable("item.herbalcurative.flowweave_ring.mode_changed", newMode.getDisplayName())
+                    Component.translatable("item.ous.flowweave_ring.mode_changed", newMode.getDisplayName())
                         .withStyle(ChatFormatting.AQUA), 
                     true);  // action bar
                 level.playSound(null, player.getX(), player.getY(), player.getZ(),
@@ -615,11 +615,11 @@ public class FlowweaveRingItem extends Item {
             // Show current casting mode
             CastingMode mode = getCastingMode(stack);
             String modeKey = switch (mode) {
-                case INFUSION -> "item.herbalcurative.flowweave_ring.mode.infusion";
-                case BURST -> "item.herbalcurative.flowweave_ring.mode.burst";
-                case ECHO -> "item.herbalcurative.flowweave_ring.mode.echo";
+                case INFUSION -> "item.ous.flowweave_ring.mode.infusion";
+                case BURST -> "item.ous.flowweave_ring.mode.burst";
+                case ECHO -> "item.ous.flowweave_ring.mode.echo";
             };
-            tooltip.add(Component.translatable("item.herbalcurative.flowweave_ring.mode", 
+            tooltip.add(Component.translatable("item.ous.flowweave_ring.mode", 
                     Component.translatable(modeKey))
                     .withStyle(ChatFormatting.AQUA));
             
@@ -640,7 +640,7 @@ public class FlowweaveRingItem extends Item {
             }
             
             // Hint for mode switching
-            tooltip.add(Component.translatable("item.herbalcurative.flowweave_ring.mode_hint")
+            tooltip.add(Component.translatable("item.ous.flowweave_ring.mode_hint")
                     .withStyle(ChatFormatting.DARK_GRAY));
         }
     }
@@ -713,7 +713,7 @@ public class FlowweaveRingItem extends Item {
             if (player.isShiftKeyDown()) {
                 CastingMode newMode = cycleMode(stack);
                 player.displayClientMessage(
-                    Component.translatable("item.herbalcurative.flowweave_ring.mode_changed", newMode.getDisplayName())
+                    Component.translatable("item.ous.flowweave_ring.mode_changed", newMode.getDisplayName())
                         .withStyle(ChatFormatting.AQUA),
                     true);
                 level.playSound(null, player.getX(), player.getY(), player.getZ(),

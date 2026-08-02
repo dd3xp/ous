@@ -36,7 +36,7 @@ public class HerbVaultBlock extends MultiblockPartBlock {
 
     public static final MapCodec<HerbVaultBlock> CODEC = simpleCodec(HerbVaultBlock::new);
 
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/herb_vault.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/herb_vault.json");
     public static final IntegerProperty POSITION = IntegerProperty.create("position", 0, SHAPES.totalPositions() - 1);
 
     public HerbVaultBlock(Properties properties) {

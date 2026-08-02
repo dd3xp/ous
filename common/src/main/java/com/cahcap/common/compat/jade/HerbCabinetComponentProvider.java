@@ -1,6 +1,6 @@
 package com.cahcap.common.compat.jade;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.registry.ModRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -14,11 +14,11 @@ import snownee.jade.api.ui.IElementHelper;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Jade icon provider for Herbal Curative blocks.
+ * Jade icon provider for Once Upon a Season blocks.
  * Provides custom icons for multiblock structures and special blocks.
  */
 public class HerbCabinetComponentProvider implements IBlockComponentProvider {
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "icon_provider");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "icon_provider");
 
     @Override
     public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {

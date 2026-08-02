@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "formed=false": { "model": "herbalcurative:block/stone_bricks" },
-    "facing=north,formed=true": { "model": "herbalcurative:block/kiln" },
-    "facing=south,formed=true": { "model": "herbalcurative:block/kiln", "y": 180 },
-    "facing=east,formed=true":  { "model": "herbalcurative:block/kiln", "y": 90 },
-    "facing=west,formed=true":  { "model": "herbalcurative:block/kiln", "y": 270 }
-  }
-}

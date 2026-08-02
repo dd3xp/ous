@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.renderer;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.client.model.HerbBoxModel;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -16,7 +16,7 @@ import net.minecraft.world.item.ItemStack;
 public class HerbBoxItemRenderer extends BlockEntityWithoutLevelRenderer {
 
     private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(
-            HerbalCurativeCommon.MOD_ID, "textures/models/herb_box.png");
+            OusCommon.MOD_ID, "textures/models/herb_box.png");
 
     private HerbBoxModel<?> model;
 

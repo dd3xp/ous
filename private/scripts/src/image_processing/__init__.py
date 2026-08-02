@@ -6,7 +6,7 @@
 """
 
 __version__ = '1.0.0'
-__author__ = 'HerbalCurative'
+__author__ = 'Ous'
 
 from .resize import resize_image
 from .color_mapping import apply_color_mapping

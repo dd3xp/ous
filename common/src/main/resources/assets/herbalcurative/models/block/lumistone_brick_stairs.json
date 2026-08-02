@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "herbalcurative:block/lumistone_bricks",
-    "top": "herbalcurative:block/lumistone_bricks",
-    "side": "herbalcurative:block/lumistone_bricks"
-  }
-}

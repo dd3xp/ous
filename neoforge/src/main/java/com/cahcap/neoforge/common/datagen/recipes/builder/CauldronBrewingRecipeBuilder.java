@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.recipes.builder;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.CauldronBrewingRecipe;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -171,7 +171,7 @@ public class CauldronBrewingRecipeBuilder {
      * @param name The recipe name (without namespace)
      */
     public void build(RecipeOutput recipeOutput, String name) {
-        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_brewing/" + name));
+        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_brewing/" + name));
     }
     
     /**

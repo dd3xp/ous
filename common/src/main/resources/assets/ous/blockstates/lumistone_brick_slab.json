@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "ous:block/lumistone_brick_slab" },
+    "type=top": { "model": "ous:block/lumistone_brick_slab_top" },
+    "type=double": { "model": "ous:block/lumistone_bricks" }
+  }
+}

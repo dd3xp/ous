@@ -1,6 +1,6 @@
 package com.cahcap.common.item;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
@@ -9,7 +9,7 @@ import net.minecraft.world.item.ArmorMaterial;
 public class LeafweaveArmorItem extends ArmorItem {
     
     public static final ResourceLocation ARMOR_TEXTURE = 
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "textures/models/armor/leafweave_armor.png");
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "textures/models/armor/leafweave_armor.png");
     
     public LeafweaveArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);

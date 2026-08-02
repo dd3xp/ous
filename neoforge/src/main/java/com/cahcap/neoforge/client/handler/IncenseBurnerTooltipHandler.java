@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.IncenseBurnerBlock;
 import com.cahcap.common.blockentity.IncenseBurnerBlockEntity;
 import net.minecraft.client.Minecraft;
@@ -26,7 +26,7 @@ import java.util.Map;
  * - When burning: [Powder icon] [vertical progress bar]
  * - Below: herbs horizontally (always shown if present)
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class IncenseBurnerTooltipHandler extends TooltipHandler {
 
     private static final IncenseBurnerTooltipHandler INSTANCE = new IncenseBurnerTooltipHandler();

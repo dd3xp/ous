@@ -34,7 +34,7 @@ public class ObeliskBlock extends MultiblockPartBlock {
 
     public static final MapCodec<ObeliskBlock> CODEC = simpleCodec(ObeliskBlock::new);
 
-    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/obelisk.json");
+    private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/obelisk.json");
     public static final IntegerProperty POSITION = IntegerProperty.create("position", 0, 26); // 3x3x3 = 27 positions
 
     public ObeliskBlock(Properties properties) {

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.registry.ModBlocks;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,7 +17,7 @@ import java.util.Map;
  * When a player right-clicks with an axe on Red Cherry logs/wood,
  * they will be converted to their stripped variants.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID)
+@EventBusSubscriber(modid = OusCommon.MOD_ID)
 public class StrippingHandler {
     
     private static final Map<BlockState, BlockState> STRIPPABLES = new HashMap<>();

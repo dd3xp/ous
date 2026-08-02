@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "ous:block/red_cherry_slab" },
+    "type=top": { "model": "ous:block/red_cherry_slab_top" },
+    "type=double": { "model": "ous:block/red_cherry_planks" }
+  }
+}

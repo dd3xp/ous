@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.tags;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.neoforge.common.registry.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -26,9 +26,9 @@ public class ModItemTagsProvider extends net.minecraft.data.tags.ItemTagsProvide
     
     // Mod-specific tags
     public static final TagKey<Item> HERB_PRODUCTS = ItemTags.create(
-            ResourceLocation.fromNamespaceAndPath("herbalcurative", "herb_products"));
+            ResourceLocation.fromNamespaceAndPath("ous", "herb_products"));
     public static final TagKey<Item> KILN_CATALYZABLE = ItemTags.create(
-            ResourceLocation.fromNamespaceAndPath("herbalcurative", "kiln_catalyzable"));
+            ResourceLocation.fromNamespaceAndPath("ous", "kiln_catalyzable"));
 
     // Common tags from other mods
     private static final TagKey<Item> C_ORES = ItemTags.create(
@@ -41,7 +41,7 @@ public class ModItemTagsProvider extends net.minecraft.data.tags.ItemTagsProvide
             CompletableFuture<HolderLookup.Provider> lookupProvider,
             CompletableFuture<TagLookup<Block>> blockTagsProvider,
             @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, blockTagsProvider, HerbalCurativeCommon.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, blockTagsProvider, OusCommon.MOD_ID, existingFileHelper);
     }
     
     @Override
@@ -74,7 +74,7 @@ public class ModItemTagsProvider extends net.minecraft.data.tags.ItemTagsProvide
         // Add forest heartwood stick to c:rods/wooden tag (allows use in vanilla recipes)
         tag(STICKS).add(ModItems.RED_CHERRY_STICK.get());
         
-        // herbalcurative:herb_products - All herb products (scaleplate, dewpetal, etc.)
+        // ous:herb_products - All herb products (scaleplate, dewpetal, etc.)
         // Used in recipes that accept any herb product (e.g. crafting Lumistone)
         tag(HERB_PRODUCTS).add(
             ModItems.SCALEPLATE.get(),

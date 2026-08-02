@@ -10,12 +10,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 思想
 
-Blockbench 导出的 oversized 多方块模型(元素坐标跨 `[−16, 32]`)不再预先切成 per-position JSON。改为在 bake 时由自定义 NeoForge geometry loader `herbalcurative:split` 运行时切片,缓存 `[mirror][position][side]` 的 `BakedQuad` 表,按 block state 的 `position` / `mirrored` 属性分派。同一份 base model JSON 同时喂渲染、VoxelShape、物品显示,**无任何预生成产物**。
+Blockbench 导出的 oversized 多方块模型(元素坐标跨 `[−16, 32]`)不再预先切成 per-position JSON。改为在 bake 时由自定义 NeoForge geometry loader `ous:split` 运行时切片,缓存 `[mirror][position][side]` 的 `BakedQuad` 表,按 block state 的 `position` / `mirrored` 属性分派。同一份 base model JSON 同时喂渲染、VoxelShape、物品显示,**无任何预生成产物**。
 
 ### 数据流
 
 ```
-common/.../models/block/<name>.json   ← Blockbench 导出,根部带 "loader": "herbalcurative:split"
+common/.../models/block/<name>.json   ← Blockbench 导出,根部带 "loader": "ous:split"
              │
              ├─► 客户端:SplitGeometryLoader → SplitUnbakedGeometry.bake()
              │      剥 rotation:{angle:0} → 计算 grid bounds → clipElement + mirrorElementX
@@ -30,16 +30,16 @@ common/.../models/block/<name>.json   ← Blockbench 导出,根部带 "loader": 
 
 | 类 | 位置 | 作用 |
 |---|---|---|
-| [`SplitGeometryLoader`](neoforge/src/main/java/com/cahcap/neoforge/client/model/split/SplitGeometryLoader.java) | neoforge | 注册入口,key = `herbalcurative:split` |
+| [`SplitGeometryLoader`](neoforge/src/main/java/com/cahcap/neoforge/client/model/split/SplitGeometryLoader.java) | neoforge | 注册入口,key = `ous:split` |
 | [`SplitUnbakedGeometry`](neoforge/src/main/java/com/cahcap/neoforge/client/model/split/SplitUnbakedGeometry.java) | neoforge | 运行时 clip / mirror / bake,全部逻辑 |
 | [`BakedSplitModel`](neoforge/src/main/java/com/cahcap/neoforge/client/model/split/BakedSplitModel.java) | neoforge | `getQuads(state, side, rand)` 按 state 查表,item 渲染时返回全模型 |
 | [`CustomVoxelShapes.loadFromModel`](common/src/main/java/com/cahcap/common/util/CustomVoxelShapes.java) | common | 读同一 model JSON 产出 VoxelShape;支持 `excludeGroups` 跳过 Blockbench 组 |
 
-Loader 在 [`HerbalCurativeNeoForgeClient.registerGeometryLoaders`](neoforge/src/main/java/com/cahcap/neoforge/HerbalCurativeNeoForgeClient.java) 里注册。
+Loader 在 [`OusNeoForgeClient.registerGeometryLoaders`](neoforge/src/main/java/com/cahcap/neoforge/OusNeoForgeClient.java) 里注册。
 
 ### 哪些多方块走这条路
 
-6 个: `cauldron`、`herb_cabinet`、`herb_vault`、`kiln`、`obelisk`、`workbench`。这 6 个 model JSON 根部有 `"loader": "herbalcurative:split"` 标记。
+6 个: `cauldron`、`herb_cabinet`、`herb_vault`、`kiln`、`obelisk`、`workbench`。这 6 个 model JSON 根部有 `"loader": "ous:split"` 标记。
 
 另外 4 个 (`herb_pot`、`herb_basket`、`incense_burner`、`shelf`) 的 block model 不跨格,走 vanilla bake;它们仅通过 `CustomVoxelShapes.loadFromModel` 获取 VoxelShape。
 
@@ -50,11 +50,11 @@ Loader 在 [`HerbalCurativeNeoForgeClient.registerGeometryLoaders`](neoforge/src
 ```json
 {
   "variants": {
-    "formed=false": { "model": "herbalcurative:block/lumistone" },
-    "facing=north,formed=true": { "model": "herbalcurative:block/cauldron" },
-    "facing=south,formed=true": { "model": "herbalcurative:block/cauldron", "y": 180 },
-    "facing=east,formed=true":  { "model": "herbalcurative:block/cauldron", "y": 90 },
-    "facing=west,formed=true":  { "model": "herbalcurative:block/cauldron", "y": 270 }
+    "formed=false": { "model": "ous:block/lumistone" },
+    "facing=north,formed=true": { "model": "ous:block/cauldron" },
+    "facing=south,formed=true": { "model": "ous:block/cauldron", "y": 180 },
+    "facing=east,formed=true":  { "model": "ous:block/cauldron", "y": 90 },
+    "facing=west,formed=true":  { "model": "ous:block/cauldron", "y": 270 }
   }
 }
 ```
@@ -63,12 +63,12 @@ Position / mirrored / lit 等属性由 `BakedSplitModel.getQuads` 从 state 读,
 
 ### 新增一个多方块要做的事
 
-1. Blockbench 建模,导出到 `common/src/main/resources/assets/herbalcurative/models/block/<name>.json`
-2. 修纹理路径(加 `herbalcurative:block/` 命名空间前缀)
-3. **根部加** `"loader": "herbalcurative:split"` 一行(在 `format_version` 同级)
+1. Blockbench 建模,导出到 `common/src/main/resources/assets/ous/models/block/<name>.json`
+2. 修纹理路径(加 `ous:block/` 命名空间前缀)
+3. **根部加** `"loader": "ous:split"` 一行(在 `format_version` 同级)
 4. 写 blockstate JSON(模板见上,换模型名和占位方块)
-5. 写 item model JSON:`{ "parent": "herbalcurative:block/<name>" }`
-6. Block 类 `private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/<name>.json");`
+5. 写 item model JSON:`{ "parent": "ous:block/<name>" }`
+6. Block 类 `private static final CustomVoxelShapes SHAPES = CustomVoxelShapes.loadFromModel("/assets/ous/models/block/<name>.json");`
 7. 如果模型带 "配饰" 组(例如 incense 香条、rope)需排除出碰撞,给 `loadFromModel` 传第二参数 `Set.of("GroupName")`
 
 **没有 Gradle task 要跑。** 改完 Blockbench 模型,F3+T 或重启客户端即可看到改动。

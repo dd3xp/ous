@@ -1,6 +1,6 @@
 package com.cahcap.common.compat.jade;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.registry.ModRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -14,7 +14,7 @@ import snownee.jade.api.ui.IElementHelper;
 import org.jetbrains.annotations.Nullable;
 
 public class HerbVaultComponentProvider implements IBlockComponentProvider {
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "herb_vault_icon");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "herb_vault_icon");
 
     @Override
     public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {}

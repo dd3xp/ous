@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.HerbPotBlock;
 import com.cahcap.common.blockentity.HerbPotBlockEntity;
 import net.minecraft.client.Minecraft;
@@ -26,7 +26,7 @@ import java.util.Map;
  * - Top row: [Seedling] >>> [Output]  (with progress bar below arrow)
  * - Bottom row: herbs horizontally
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbPotTooltipHandler extends TooltipHandler {
 
     private static final HerbPotTooltipHandler INSTANCE = new HerbPotTooltipHandler();

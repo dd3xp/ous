@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ous:block/workbench" },
+    "facing=south": { "model": "ous:block/workbench", "y": 180 },
+    "facing=east":  { "model": "ous:block/workbench", "y": 90 },
+    "facing=west":  { "model": "ous:block/workbench", "y": 270 }
+  }
+}

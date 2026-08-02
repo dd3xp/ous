@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "formed=false": { "model": "ous:block/stone_bricks" },
+    "facing=north,formed=true": { "model": "ous:block/kiln" },
+    "facing=south,formed=true": { "model": "ous:block/kiln", "y": 180 },
+    "facing=east,formed=true":  { "model": "ous:block/kiln", "y": 90 },
+    "facing=west,formed=true":  { "model": "ous:block/kiln", "y": 270 }
+  }
+}

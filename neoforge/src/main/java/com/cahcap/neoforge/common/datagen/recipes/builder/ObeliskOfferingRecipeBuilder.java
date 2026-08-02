@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.recipes.builder;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.ObeliskOfferingRecipe;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -47,7 +47,7 @@ public class ObeliskOfferingRecipeBuilder {
 
     public void save(RecipeOutput output, String name) {
         ResourceLocation recipeId = ResourceLocation.fromNamespaceAndPath(
-                HerbalCurativeCommon.MOD_ID, "obelisk_offering/" + name);
+                OusCommon.MOD_ID, "obelisk_offering/" + name);
 
         ObeliskOfferingRecipe recipe = new ObeliskOfferingRecipe(
                 ingredient, entityType, waitTicks, spawnDistance);

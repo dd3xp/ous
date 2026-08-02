@@ -1,0 +1,6 @@
+{
+  "parent": "ous:item/red_cherry_crossbow_pulling_0",
+  "textures": {
+    "layer0": "ous:item/red_cherry_crossbow_pulling_1"
+  }
+}

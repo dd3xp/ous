@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.blockentity.cauldron.CauldronBlockEntity;
 import com.cahcap.common.blockentity.HerbBasketBlockEntity;
 import com.cahcap.common.blockentity.HerbCabinetBlockEntity;
@@ -19,7 +19,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModBlockEntities {
     
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = 
-            DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, OusCommon.MOD_ID);
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<HerbCabinetBlockEntity>> HERB_CABINET =
             BLOCK_ENTITIES.register("herb_cabinet", () -> BlockEntityType.Builder.of(

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.worldgen.RedCherryTreeFeature;
 import com.cahcap.common.worldgen.HerbFlowerPatchFeature;
 import net.minecraft.core.registries.Registries;
@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModFeatures {
     
     public static final DeferredRegister<Feature<?>> FEATURES = 
-        DeferredRegister.create(Registries.FEATURE, HerbalCurativeCommon.MOD_ID);
+        DeferredRegister.create(Registries.FEATURE, OusCommon.MOD_ID);
 
     // Tree features
     public static final DeferredHolder<Feature<?>, RedCherryTreeFeature> RED_CHERRY_TREE = 

@@ -209,7 +209,7 @@ public class HerbPotBlockEntity extends BlockEntity {
         return path.contains("dirt") || path.contains("soil") || path.contains("grass_block") ||
                path.contains("podzol") || path.contains("mycelium") || path.contains("farmland") ||
                path.contains("mud") || path.contains("rooted_dirt") ||
-               id.toString().contains("herbalcurative:herb_planting_soil");
+               id.toString().contains("ous:herb_planting_soil");
     }
     
     public static boolean isValidSeedling(ItemStack stack) {
@@ -223,7 +223,7 @@ public class HerbPotBlockEntity extends BlockEntity {
             return true;
         }
         
-        if ("herbalcurative".equals(namespace)) {
+        if ("ous".equals(namespace)) {
             return path.equals("scleris") || path.equals("dorella") ||
                    path.equals("sephrel") || path.equals("crysel") ||
                    path.equals("pyraze") || path.equals("stellia") ||

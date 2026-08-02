@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.KilnBlock;
 import com.cahcap.common.blockentity.KilnBlockEntity;
 import net.minecraft.client.Minecraft;
@@ -19,7 +19,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
  * Client-side handler for rendering Kiln HUD tooltip.
  * Layout: [Input] >>> [Output], catalyst above arrow.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class KilnTooltipHandler extends TooltipHandler {
 
     private static final KilnTooltipHandler INSTANCE = new KilnTooltipHandler();

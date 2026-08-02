@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "ous:block/red_cherry_bush_stage0"
+    },
+    "age=1": {
+      "model": "ous:block/red_cherry_bush_stage1"
+    },
+    "age=2": {
+      "model": "ous:block/red_cherry_bush_stage2"
+    }
+  }
+}

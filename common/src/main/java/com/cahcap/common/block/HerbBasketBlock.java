@@ -53,9 +53,9 @@ public class HerbBasketBlock extends BaseEntityBlock {
     public static final BooleanProperty ON_WALL = BooleanProperty.create("on_wall");
     
     private static final CustomVoxelShapes FLOOR_SHAPES = CustomVoxelShapes.loadFromModel(
-            "/assets/herbalcurative/models/block/herb_basket_floor.json");
+            "/assets/ous/models/block/herb_basket_floor.json");
     private static final CustomVoxelShapes WALL_SHAPES = CustomVoxelShapes.loadFromModel(
-            "/assets/herbalcurative/models/block/herb_basket_wall.json", java.util.Set.of("Rope", "Nails"));
+            "/assets/ous/models/block/herb_basket_wall.json", java.util.Set.of("Rope", "Nails"));
     
     public HerbBasketBlock(Properties properties) {
         super(properties);

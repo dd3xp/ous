@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
@@ -12,7 +12,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
  * 
  * @EventBusSubscriber annotation removed because all events are currently disabled
  */
-// @EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID)
+// @EventBusSubscriber(modid = OusCommon.MOD_ID)
 public class LumistoneToolHandler {
     // Lumistone Tools currently have no special effects
     // They provide basic tool functionality and durability regeneration only

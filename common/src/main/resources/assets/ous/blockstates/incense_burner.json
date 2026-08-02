@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ous:block/incense_burner"
+    },
+    "facing=south": {
+      "model": "ous:block/incense_burner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ous:block/incense_burner",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "ous:block/incense_burner",
+      "y": 90
+    }
+  }
+}

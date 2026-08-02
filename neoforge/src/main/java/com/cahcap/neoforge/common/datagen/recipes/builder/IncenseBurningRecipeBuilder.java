@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.recipes.builder;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.IncenseBurningRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
@@ -46,7 +46,7 @@ public class IncenseBurningRecipeBuilder {
     }
     
     public void save(RecipeOutput output, String name) {
-        ResourceLocation recipeId = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, 
+        ResourceLocation recipeId = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, 
                 "incense_burning/" + name);
         
         IncenseBurningRecipe recipe = new IncenseBurningRecipe(entityType, herbs, burnTime);

@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "formed=false": { "model": "herbalcurative:block/lumistone_bricks" },
-    "facing=north,formed=true": { "model": "herbalcurative:block/herb_vault" },
-    "facing=south,formed=true": { "model": "herbalcurative:block/herb_vault", "y": 180 },
-    "facing=east,formed=true":  { "model": "herbalcurative:block/herb_vault", "y": 90 },
-    "facing=west,formed=true":  { "model": "herbalcurative:block/herb_vault", "y": 270 }
-  }
-}

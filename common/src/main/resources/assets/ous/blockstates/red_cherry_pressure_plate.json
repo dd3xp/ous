@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "ous:block/red_cherry_pressure_plate" },
+    "powered=true": { "model": "ous:block/red_cherry_pressure_plate_down" }
+  }
+}

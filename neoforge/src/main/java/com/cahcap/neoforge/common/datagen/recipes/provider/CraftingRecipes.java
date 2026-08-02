@@ -18,7 +18,7 @@ import net.minecraft.world.item.Items;
 public class CraftingRecipes {
 
     private static final TagKey<Item> HERB_PRODUCTS = ItemTags.create(
-            ResourceLocation.fromNamespaceAndPath("herbalcurative", "herb_products"));
+            ResourceLocation.fromNamespaceAndPath("ous", "herb_products"));
 
     private final ModRecipeProvider p;
 
@@ -62,22 +62,22 @@ public class CraftingRecipes {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CHERRY_PLANKS.get(), 4)
             .requires(ModBlocks.RED_CHERRY_LOG.get())
             .unlockedBy("has_red_cherry_log", p.criterion(ModBlocks.RED_CHERRY_LOG.get()))
-            .save(output, "herbalcurative:red_cherry_planks_from_log");
+            .save(output, "ous:red_cherry_planks_from_log");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CHERRY_PLANKS.get(), 4)
             .requires(ModBlocks.STRIPPED_RED_CHERRY_LOG.get())
             .unlockedBy("has_stripped_red_cherry_log", p.criterion(ModBlocks.STRIPPED_RED_CHERRY_LOG.get()))
-            .save(output, "herbalcurative:red_cherry_planks_from_stripped_log");
+            .save(output, "ous:red_cherry_planks_from_stripped_log");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CHERRY_PLANKS.get(), 4)
             .requires(ModBlocks.RED_CHERRY_WOOD.get())
             .unlockedBy("has_red_cherry_wood", p.criterion(ModBlocks.RED_CHERRY_WOOD.get()))
-            .save(output, "herbalcurative:red_cherry_planks_from_wood");
+            .save(output, "ous:red_cherry_planks_from_wood");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CHERRY_PLANKS.get(), 4)
             .requires(ModBlocks.STRIPPED_RED_CHERRY_WOOD.get())
             .unlockedBy("has_stripped_red_cherry_wood", p.criterion(ModBlocks.STRIPPED_RED_CHERRY_WOOD.get()))
-            .save(output, "herbalcurative:red_cherry_planks_from_stripped_wood");
+            .save(output, "ous:red_cherry_planks_from_stripped_wood");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CHERRY_WOOD.get(), 3)
             .define('#', ModBlocks.RED_CHERRY_LOG.get())
@@ -131,7 +131,7 @@ public class CraftingRecipes {
             .define('#', ModBlocks.RED_CHERRY_PLANKS.get())
             .pattern("#").pattern("#")
             .unlockedBy("has_red_cherry_planks", p.criterion(ModBlocks.RED_CHERRY_PLANKS.get()))
-            .save(output, "herbalcurative:red_cherry_stick");
+            .save(output, "ous:red_cherry_stick");
 
         // ==================== Lumistone Series ====================
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LUMISTONE.get(), 8)
@@ -200,6 +200,6 @@ public class CraftingRecipes {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MAGIC_ALLOY_INGOT.get(), 9)
             .requires(ModBlocks.MAGIC_ALLOY_BLOCK.get())
             .unlockedBy("has_magic_alloy_block", p.criterion(ModBlocks.MAGIC_ALLOY_BLOCK.get()))
-            .save(output, "herbalcurative:magic_alloy_ingot_from_block");
+            .save(output, "ous:magic_alloy_ingot_from_block");
     }
 }

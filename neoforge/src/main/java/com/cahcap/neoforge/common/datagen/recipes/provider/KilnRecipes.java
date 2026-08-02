@@ -16,7 +16,7 @@ public class KilnRecipes {
 
     public void build(RecipeOutput output) {
         TagKey<Item> kilnCatalyzable = ItemTags.create(
-                ResourceLocation.fromNamespaceAndPath("herbalcurative", "kiln_catalyzable"));
+                ResourceLocation.fromNamespaceAndPath("ous", "kiln_catalyzable"));
         KilnCatalystRecipeBuilder.builder()
                 .ingredient(ModItems.PYRO_NODE.get())
                 .affectedInputs(kilnCatalyzable)

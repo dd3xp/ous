@@ -63,7 +63,7 @@ public class WorkbenchBlock extends BaseEntityBlock {
     public static final int POS_LEFT = 0, POS_CENTER = 1, POS_RIGHT = 2;
 
     private static final com.cahcap.common.util.CustomVoxelShapes SHAPES =
-            com.cahcap.common.util.CustomVoxelShapes.loadFromModel("/assets/herbalcurative/models/block/workbench.json");
+            com.cahcap.common.util.CustomVoxelShapes.loadFromModel("/assets/ous/models/block/workbench.json");
 
     public WorkbenchBlock(Properties properties) {
         super(properties);

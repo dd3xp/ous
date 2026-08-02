@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ous:block/herb_pot" },
+    "facing=south": { "model": "ous:block/herb_pot", "y": 180 },
+    "facing=west": { "model": "ous:block/herb_pot", "y": 270 },
+    "facing=east": { "model": "ous:block/herb_pot", "y": 90 }
+  }
+}

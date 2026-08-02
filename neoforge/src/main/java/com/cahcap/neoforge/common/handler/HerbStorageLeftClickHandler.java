@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.HerbCabinetBlock;
 import com.cahcap.common.block.HerbVaultBlock;
 import net.minecraft.core.BlockPos;
@@ -22,7 +22,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
  * prevent destruction. We call attack() manually since canceling the event
  * prevents Minecraft from calling it.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID)
+@EventBusSubscriber(modid = OusCommon.MOD_ID)
 public class HerbStorageLeftClickHandler {
 
     @SubscribeEvent

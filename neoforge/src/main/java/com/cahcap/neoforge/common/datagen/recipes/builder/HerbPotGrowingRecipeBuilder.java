@@ -103,7 +103,7 @@ public class HerbPotGrowingRecipeBuilder {
                 growthTime
         );
         
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath("herbalcurative", "herb_pot_growing/" + name);
+        ResourceLocation id = ResourceLocation.fromNamespaceAndPath("ous", "herb_pot_growing/" + name);
         output.accept(id, recipe, null);
     }
 }

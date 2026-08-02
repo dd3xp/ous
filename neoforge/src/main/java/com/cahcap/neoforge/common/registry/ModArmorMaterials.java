@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -19,7 +19,7 @@ import java.util.List;
 public class ModArmorMaterials {
     
     public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = 
-            DeferredRegister.create(Registries.ARMOR_MATERIAL, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(Registries.ARMOR_MATERIAL, OusCommon.MOD_ID);
     
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> LEAFWEAVE = ARMOR_MATERIALS.register("leafweave",
             () -> new ArmorMaterial(
@@ -33,7 +33,7 @@ public class ModArmorMaterials {
                     15, // enchantability (higher than diamond's 10)
                     SoundEvents.ARMOR_EQUIP_LEATHER,
                     () -> Ingredient.of(ModItems.SCALEPLATE.get()),
-                    List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "leafweave"))),
+                    List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "leafweave"))),
                     0.0F, // toughness
                     0.0F  // knockback resistance
             ));

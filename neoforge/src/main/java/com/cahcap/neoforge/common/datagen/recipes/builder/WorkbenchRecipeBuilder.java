@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.recipes.builder;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.WorkbenchRecipe;
 import com.cahcap.common.recipe.WorkbenchRecipe.MaterialRequirement;
 import com.cahcap.common.recipe.WorkbenchRecipe.ToolRequirement;
@@ -226,7 +226,7 @@ public class WorkbenchRecipeBuilder {
      * @param name The recipe name (without namespace)
      */
     public void build(RecipeOutput recipeOutput, String name) {
-        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "workbench/" + name));
+        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "workbench/" + name));
     }
     
     /**

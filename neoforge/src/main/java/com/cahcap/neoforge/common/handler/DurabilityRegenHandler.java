@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.item.RedCherryCrossbowItem;
 import com.cahcap.neoforge.common.registry.ModItems;
 import net.minecraft.world.entity.player.Player;
@@ -19,7 +19,7 @@ import java.util.UUID;
  * Handler for durability regeneration
  * Leafweave Armor and Lumistone Tools regenerate 1 durability per second
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID)
+@EventBusSubscriber(modid = OusCommon.MOD_ID)
 public class DurabilityRegenHandler {
     
     private static final int DURABILITY_REGEN_TICK_INTERVAL = 20;

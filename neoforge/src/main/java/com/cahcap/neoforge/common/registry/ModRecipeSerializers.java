@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.CauldronBrewingRecipe;
 import com.cahcap.common.recipe.CauldronInfusingRecipe;
 import com.cahcap.common.recipe.HerbalBlendingRecipe;
@@ -23,7 +23,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModRecipeSerializers {
     
     public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZERS = 
-            DeferredRegister.create(Registries.RECIPE_SERIALIZER, HerbalCurativeCommon.MOD_ID);
+            DeferredRegister.create(Registries.RECIPE_SERIALIZER, OusCommon.MOD_ID);
     
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<HerbalBlendingRecipe>> HERBAL_BLENDING = 
             RECIPE_SERIALIZERS.register("herbal_blending", () -> HerbalBlendingRecipe.Serializer.INSTANCE);

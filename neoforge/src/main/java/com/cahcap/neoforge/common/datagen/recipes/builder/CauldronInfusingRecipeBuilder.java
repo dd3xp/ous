@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.datagen.recipes.builder;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.recipe.CauldronInfusingRecipe;
 import com.cahcap.common.recipe.CauldronInfusingRecipe.IngredientWithCount;
 import com.cahcap.common.registry.ModRegistries;
@@ -220,7 +220,7 @@ public class CauldronInfusingRecipeBuilder {
      * @param name The recipe name (without namespace)
      */
     public void build(RecipeOutput recipeOutput, String name) {
-        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "cauldron_infusing/" + name));
+        build(recipeOutput, ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "cauldron_infusing/" + name));
     }
     
     /**

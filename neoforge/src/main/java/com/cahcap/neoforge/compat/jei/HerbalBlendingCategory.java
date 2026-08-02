@@ -23,7 +23,7 @@ import java.util.List;
 public class HerbalBlendingCategory implements IRecipeCategory<HerbalBlendingRecipe> {
 
     public static final RecipeType<HerbalBlendingRecipe> RECIPE_TYPE =
-            RecipeType.create("herbalcurative", "herbal_blending", HerbalBlendingRecipe.class);
+            RecipeType.create("ous", "herbal_blending", HerbalBlendingRecipe.class);
 
     private static final int WIDTH = 144;
     private static final int HEIGHT = 62;
@@ -63,7 +63,7 @@ public class HerbalBlendingCategory implements IRecipeCategory<HerbalBlendingRec
 
     @Override
     public Component getTitle() {
-        return Component.translatable("jei.herbalcurative.category.herbal_blending");
+        return Component.translatable("jei.ous.category.herbal_blending");
     }
 
     @Override

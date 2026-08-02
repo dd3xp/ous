@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "ous:block/stripped_red_cherry_wood", "x": 90, "y": 90 },
+    "axis=y": { "model": "ous:block/stripped_red_cherry_wood" },
+    "axis=z": { "model": "ous:block/stripped_red_cherry_wood", "x": 90 }
+  }
+}

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.handler;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.block.HerbBasketBlock;
 import com.cahcap.common.blockentity.HerbBasketBlockEntity;
 import net.minecraft.client.Minecraft;
@@ -20,7 +20,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
  * Client-side handler for rendering Herb Basket HUD tooltip.
  * Shows herb icon and count below crosshair when looking at a herb basket.
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbBasketTooltipHandler extends TooltipHandler {
 
     private static final HerbBasketTooltipHandler INSTANCE = new HerbBasketTooltipHandler();

@@ -1,6 +1,6 @@
 package com.cahcap.client.model;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.HumanoidModel;
@@ -14,7 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 public class HerbBoxModel<T extends LivingEntity> extends HumanoidModel<T> {
     
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-            ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "herb_box"), "main");
+            ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "herb_box"), "main");
 
     public HerbBoxModel(ModelPart root) {
         super(root);

@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/herbalcurative.accesswidener")
+    accessWidenerPath = file("src/main/resources/ous.accesswidener")
 }
 
 

@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.common.registry;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.common.item.*;
 import com.cahcap.common.item.IncensePowderItem;
 import com.cahcap.common.item.flowweavering.FlowweaveRingItem;
@@ -16,7 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HerbalCurativeCommon.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(OusCommon.MOD_ID);
 
     // ==================== Herb Products ====================
     

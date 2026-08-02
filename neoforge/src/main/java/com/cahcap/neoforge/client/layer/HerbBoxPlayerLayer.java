@@ -1,6 +1,6 @@
 package com.cahcap.neoforge.client.layer;
 
-import com.cahcap.HerbalCurativeCommon;
+import com.cahcap.OusCommon;
 import com.cahcap.client.model.HerbBoxModel;
 import com.cahcap.neoforge.common.registry.ModItems;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -28,10 +28,10 @@ import java.util.WeakHashMap;
  * Renders herb box on player's back when they have one in inventory
  * Uses caching to avoid expensive inventory scans every frame
  */
-@EventBusSubscriber(modid = HerbalCurativeCommon.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT)
 public class HerbBoxPlayerLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<AbstractClientPlayer>> {
     
-    private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(HerbalCurativeCommon.MOD_ID, "textures/models/herb_box.png");
+    private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "textures/models/herb_box.png");
     private HerbBoxModel<AbstractClientPlayer> model;
     
     // Cache to avoid checking inventory every frame (60 times per second)

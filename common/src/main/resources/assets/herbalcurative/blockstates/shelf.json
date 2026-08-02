@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "herbalcurative:block/shelf" },
-    "facing=south": { "model": "herbalcurative:block/shelf", "y": 180 },
-    "facing=west": { "model": "herbalcurative:block/shelf", "y": 270 },
-    "facing=east": { "model": "herbalcurative:block/shelf", "y": 90 }
-  }
-}
