@@ -105,20 +105,28 @@
 			"rotation": [30, -135, 0],
 			"scale": [0.25, 0.35, 0.45]
 		},
+		"head": {
+			"translation": [0, 2.25, 0]
+		},
 		"fixed": {
 			"scale": [0.35, 0.35, 0.35]
+		},
+		"on_shelf": {
+			"scale": [0.3, 0.3, 0.3]
 		}
 	},
 	"groups": [
 		{
 			"name": "TableLegs",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
 			"children": [0, 1, 2, 3]
 		},
 		{
 			"name": "TableTop",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
 			"children": [4]
 		}
