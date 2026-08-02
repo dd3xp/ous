@@ -33,3 +33,9 @@ private/references
 
 # repo
 repo
+# python
+__pycache__/
+*.pyc
+
+# architectury transformer 日志
+.architectury-transformer/
