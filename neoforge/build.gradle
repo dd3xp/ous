@@ -60,17 +60,20 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 
-    // Optional WTHIT/Jade support — compile against API only, ship full mod at dev runtime
-    modCompileOnly "mcp.mobius.waila:wthit-api:neo-12.8.2"
-    modLocalRuntime "mcp.mobius.waila:wthit:neo-12.8.2"
+    // Optional WTHIT/Jade/JEI support — 版本与 neoforge/run/mods 里整合包自带的 jar 对齐。
+    // WTHIT / JEI 的完整 mod 由 run/mods 里的 jar 提供，这里只要 API。
+    modCompileOnly "mcp.mobius.waila:wthit-api:neo-12.8.3"
 
-    modCompileOnly "maven.modrinth:jade:15.9.3+neoforge"
-    modLocalRuntime "maven.modrinth:jade:15.9.3+neoforge"
+    // Jade 必须走 modLocalRuntime，不能丢 jar 到 run/mods：
+    // 它的 StringRenderOutputMixin @Shadow 了内部类的合成字段 this$0，需要 refmap 重映射，
+    // 而开发环境只对 Loom remap 过的 mod 加载 refmap。直接放原始 jar 会在标题界面崩溃
+    // (InvalidMixinException: @Shadow field this$0 was not located ... No refMap loaded)。
+    // 因此 run/mods 里不要放 Jade-*.jar，由下面这行提供。
+    modCompileOnly "maven.modrinth:jade:15.10.3+neoforge"
+    modLocalRuntime "maven.modrinth:jade:15.10.3+neoforge"
 
-    // JEI - compile against API only, ship full JEI at dev runtime for testing
     modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}-common-api:${rootProject.jei_version}"
     modCompileOnly "mezz.jei:jei-${rootProject.minecraft_version}-neoforge-api:${rootProject.jei_version}"
-    modLocalRuntime "mezz.jei:jei-${rootProject.minecraft_version}-neoforge:${rootProject.jei_version}"
 }
 
 processResources {
