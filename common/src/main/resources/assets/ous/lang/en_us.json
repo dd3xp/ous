@@ -32,7 +32,7 @@
   "block.ous.lumistone_pressure_plate": "Lumistone Pressure Plate",
   "block.ous.lumistone_button": "Lumistone Button",
   "block.ous.lumistone_brick_wall": "Lumistone Brick Wall",
-  "block.ous.magic_alloy_block": "Magic Alloy Block",
+  "block.ous.arcane_alloy_block": "Arcane Alloy Block",
   "block.ous.herb_vault": "Herb Vault",
   "item.ous.herb_vault": "Herb Vault",
   "item.ous.scaleplate": "Scaleplate",
@@ -50,8 +50,8 @@
   "item.ous.leather_plate": "Leather Plate",
   "item.ous.velvet_plate": "Velvet Plate",
   "item.ous.silk_plate": "Silk Plate",
-  "item.ous.magic_alloy_dust": "Magic Alloy Dust",
-  "item.ous.magic_alloy_ingot": "Magic Alloy Ingot",
+  "item.ous.arcane_alloy_dust": "Arcane Alloy Dust",
+  "item.ous.arcane_alloy_ingot": "Arcane Alloy Ingot",
   "item.ous.brilliant_gem_dust": "Brilliant Gem Dust",
   "item.ous.brilliant_gem": "Brilliant Gem",
   "item.ous.red_cherry_stick": "Red Cherry Stick",
@@ -107,5 +107,8 @@
   "block.ous.crystal_lantern": "Crystal Lantern",
   "tooltip.ous.crystal_lantern.bound": "Bound: %s",
   "tooltip.ous.crystal_lantern.unbound": "Not bound to any effect",
-  "tooltip.ous.crystal_lantern.dewpetal": "Dewpetal: %s"
+  "tooltip.ous.crystal_lantern.dewpetal": "Dewpetal: %s",
+  "block.ous.arcane_alloy_anvil": "Arcane Alloy Anvil",
+  "block.ous.chipped_arcane_alloy_anvil": "Chipped Arcane Alloy Anvil",
+  "block.ous.damaged_arcane_alloy_anvil": "Damaged Arcane Alloy Anvil"
 }

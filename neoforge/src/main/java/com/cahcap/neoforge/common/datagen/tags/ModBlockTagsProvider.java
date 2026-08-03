@@ -91,6 +91,9 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
         
         // minecraft:mineable/pickaxe - Blocks mineable with pickaxe
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                ModBlocks.ARCANE_ALLOY_ANVIL.get(),
+                ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(),
+                ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get(),
             ModBlocks.LUMISTONE.get(),
             ModBlocks.LUMISTONE_BRICKS.get(),
             ModBlocks.RUNE_STONE_BRICKS.get(),
@@ -102,7 +105,7 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
             ModBlocks.INCENSE_BURNER.get(),
             ModBlocks.KILN.get(),
             ModBlocks.LUMISTONE_BRICK_WALL.get(),
-            ModBlocks.MAGIC_ALLOY_BLOCK.get(),
+            ModBlocks.ARCANE_ALLOY_BLOCK.get(),
             ModBlocks.LUMISTONE_SLAB.get(),
             ModBlocks.LUMISTONE_STAIRS.get(),
             ModBlocks.LUMISTONE_WALL.get(),
@@ -224,5 +227,11 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
             net.minecraft.world.level.block.Blocks.MAGMA_BLOCK,
             ModBlocks.RUNE_STONE_BRICKS.get()
         );
+
+        // AnvilMenu.isValidBlock checks this tag; without it the screen closes immediately.
+        this.tag(BlockTags.ANVIL).add(
+                ModBlocks.ARCANE_ALLOY_ANVIL.get(),
+                ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(),
+                ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get());
     }
 }

@@ -55,6 +55,9 @@ public class ModRegistries {
     public static Supplier<Block> CAULDRON;
     public static Supplier<Block> HERB_POT;
     public static Supplier<Block> CRYSTAL_LANTERN;
+    public static Supplier<Block> ARCANE_ALLOY_ANVIL;
+    public static Supplier<Block> CHIPPED_ARCANE_ALLOY_ANVIL;
+    public static Supplier<Block> DAMAGED_ARCANE_ALLOY_ANVIL;
     public static Supplier<Block> INCENSE_BURNER;
     public static Supplier<Block> KILN;
     public static Supplier<Block> HERB_VAULT;
@@ -66,7 +69,7 @@ public class ModRegistries {
     public static Supplier<Block> LUMISTONE_BRICK_WALL;
     public static Supplier<Block> OBELISK;
     public static Supplier<Block> RUNE_STONE_BRICKS;
-    public static Supplier<Block> MAGIC_ALLOY_BLOCK;
+    public static Supplier<Block> ARCANE_ALLOY_BLOCK;
     
     // ==================== Items ====================
     public static Supplier<Item> SCALEPLATE;
@@ -128,6 +131,7 @@ public class ModRegistries {
     public static Supplier<BlockEntityType<?>> WORKBENCH_BE;
     public static Supplier<BlockEntityType<?>> CAULDRON_BE;
     public static Supplier<BlockEntityType<?>> CRYSTAL_LANTERN_BE;
+    public static Supplier<BlockEntityType<?>> ARCANE_ALLOY_ANVIL_BE;
     public static Supplier<BlockEntityType<?>> HERB_POT_BE;
     public static Supplier<BlockEntityType<?>> INCENSE_BURNER_BE;
     public static Supplier<BlockEntityType<?>> KILN_BE;

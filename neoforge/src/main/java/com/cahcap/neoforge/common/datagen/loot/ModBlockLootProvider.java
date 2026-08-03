@@ -53,6 +53,9 @@ public class ModBlockLootProvider extends LootTableProvider {
             this.dropSelf(ModBlocks.CRYSEL.get());
             this.dropSelf(ModBlocks.DORELLA.get());
             this.dropSelf(ModBlocks.CRYSTAL_LANTERN.get());
+            this.dropSelf(ModBlocks.ARCANE_ALLOY_ANVIL.get());
+            this.dropSelf(ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get());
+            this.dropSelf(ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get());
             this.dropSelf(ModBlocks.PYRAZE.get());
             this.dropSelf(ModBlocks.STELLIA.get());
             this.dropSelf(ModBlocks.SCLERIS.get());
@@ -107,8 +110,8 @@ public class ModBlockLootProvider extends LootTableProvider {
             this.dropSelf(ModBlocks.LUMISTONE_BRICK_STAIRS.get());
             this.dropSelf(ModBlocks.LUMISTONE_BRICK_WALL.get());
 
-            // Magic Alloy Block
-            this.dropSelf(ModBlocks.MAGIC_ALLOY_BLOCK.get());
+            // Arcane Alloy Block
+            this.dropSelf(ModBlocks.ARCANE_ALLOY_BLOCK.get());
 
             // Cauldron - drops handled by block's getDrops method (position-based original blocks)
             this.add(ModBlocks.CAULDRON.get(), noDrop());

@@ -216,7 +216,7 @@ public class HerbVaultBlockEntity extends MultiblockPartBlockEntity {
         } else if (dy == 0) {
             if (dx == 0 && dz == 0) {
                 // Center: magic alloy block
-                return ModRegistries.MAGIC_ALLOY_BLOCK.get().defaultBlockState();
+                return ModRegistries.ARCANE_ALLOY_BLOCK.get().defaultBlockState();
             }
             boolean isCorner = (dx != 0 && dz != 0);
             if (isCorner) {

@@ -62,6 +62,14 @@ public class ModBlockEntities {
                     com.cahcap.common.blockentity.CrystalLanternBlockEntity::new,
                     ModBlocks.CRYSTAL_LANTERN.get()
             ).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.cahcap.common.blockentity.ArcaneAlloyAnvilBlockEntity>> ARCANE_ALLOY_ANVIL =
+            BLOCK_ENTITIES.register("arcane_alloy_anvil", () -> BlockEntityType.Builder.of(
+                    com.cahcap.common.blockentity.ArcaneAlloyAnvilBlockEntity::new,
+                    ModBlocks.ARCANE_ALLOY_ANVIL.get(),
+                    ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(),
+                    ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get()
+            ).build(null));
     
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IncenseBurnerBlockEntity>> INCENSE_BURNER =
             BLOCK_ENTITIES.register("incense_burner", () -> BlockEntityType.Builder.of(

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ous:item/magic_alloy_dust"
+    "layer0": "ous:item/arcane_alloy_dust"
   }
 }

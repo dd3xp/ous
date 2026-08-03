@@ -38,8 +38,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.LEATHER_PLATE.get());
                         output.accept(ModItems.VELVET_PLATE.get());
                         output.accept(ModItems.SILK_PLATE.get());
-                        output.accept(ModItems.MAGIC_ALLOY_DUST.get());
-                        output.accept(ModItems.MAGIC_ALLOY_INGOT.get());
+                        output.accept(ModItems.ARCANE_ALLOY_DUST.get());
+                        output.accept(ModItems.ARCANE_ALLOY_INGOT.get());
                         output.accept(ModItems.BRILLIANT_GEM_DUST.get());
                         output.accept(ModItems.BRILLIANT_GEM.get());
                         
@@ -82,7 +82,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.LUMISTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.LUMISTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.LUMISTONE_BRICK_WALL.get());
-                        output.accept(ModBlocks.MAGIC_ALLOY_BLOCK.get());
+                        output.accept(ModBlocks.ARCANE_ALLOY_BLOCK.get());
                         
                         // Leafweave Armor
                         output.accept(ModItems.LEAFWEAVE_HELMET.get());
@@ -113,9 +113,10 @@ public class ModCreativeTabs {
                         // No recipe exists yet, so hand out a Speed-bound lantern for testing.
                         // Replace with a plain accept() once the crafting recipe binds the effect.
                         output.accept(createBoundLantern());
+                        output.accept(ModItems.ARCANE_ALLOY_ANVIL.get());
                         output.accept(ModItems.INCENSE_BURNER.get());
                         
-                        output.accept(ModBlocks.MAGIC_ALLOY_BLOCK.get());
+                        output.accept(ModBlocks.ARCANE_ALLOY_BLOCK.get());
 
                         // Incense Powders
                         output.accept(ModItems.WITHER_SKELETON_POWDER.get());

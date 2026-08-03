@@ -49,9 +49,9 @@ public class ModItems {
     public static final DeferredItem<Item> VELVET_PLATE = ITEMS.registerSimpleItem("velvet_plate");
     public static final DeferredItem<Item> SILK_PLATE = ITEMS.registerSimpleItem("silk_plate");
     
-    // Magic Alloy materials
-    public static final DeferredItem<Item> MAGIC_ALLOY_DUST = ITEMS.registerSimpleItem("magic_alloy_dust");
-    public static final DeferredItem<Item> MAGIC_ALLOY_INGOT = ITEMS.registerSimpleItem("magic_alloy_ingot");
+    // Arcane Alloy materials
+    public static final DeferredItem<Item> ARCANE_ALLOY_DUST = ITEMS.registerSimpleItem("arcane_alloy_dust");
+    public static final DeferredItem<Item> ARCANE_ALLOY_INGOT = ITEMS.registerSimpleItem("arcane_alloy_ingot");
     
     // Brilliant Gem materials
     public static final DeferredItem<Item> BRILLIANT_GEM_DUST = ITEMS.registerSimpleItem("brilliant_gem_dust");
@@ -177,6 +177,13 @@ public class ModItems {
 
     public static final DeferredItem<com.cahcap.common.item.CrystalLanternItem> CRYSTAL_LANTERN = ITEMS.register("crystal_lantern",
             () -> new com.cahcap.common.item.CrystalLanternItem(ModBlocks.CRYSTAL_LANTERN.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> ARCANE_ALLOY_ANVIL = ITEMS.register("arcane_alloy_anvil",
+            () -> new BlockItem(ModBlocks.ARCANE_ALLOY_ANVIL.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> CHIPPED_ARCANE_ALLOY_ANVIL = ITEMS.register("chipped_arcane_alloy_anvil",
+            () -> new BlockItem(ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> DAMAGED_ARCANE_ALLOY_ANVIL = ITEMS.register("damaged_arcane_alloy_anvil",
+            () -> new BlockItem(ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get(), new Item.Properties()));
     
     // Incense Burner - mob summoning block
     public static final DeferredItem<BlockItem> INCENSE_BURNER = ITEMS.register("incense_burner",
@@ -269,9 +276,9 @@ public class ModItems {
     public static final DeferredItem<BlockItem> LUMISTONE_BUTTON = ITEMS.register("lumistone_button",
             () -> new BlockItem(ModBlocks.LUMISTONE_BUTTON.get(), new Item.Properties()));
 
-    // Magic Alloy Block
-    public static final DeferredItem<BlockItem> MAGIC_ALLOY_BLOCK = ITEMS.register("magic_alloy_block",
-            () -> new BlockItem(ModBlocks.MAGIC_ALLOY_BLOCK.get(), new Item.Properties()));
+    // Arcane Alloy Block
+    public static final DeferredItem<BlockItem> ARCANE_ALLOY_BLOCK = ITEMS.register("arcane_alloy_block",
+            () -> new BlockItem(ModBlocks.ARCANE_ALLOY_BLOCK.get(), new Item.Properties()));
 
     // ==================== Workbench Tools ====================
     // Repair: Cutting Knife + Forge Hammer = Iron Ingot, Feather Quill = Ink Sac, Woven Rope = String

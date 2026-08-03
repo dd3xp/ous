@@ -177,6 +177,13 @@ public class OusNeoForgeClient {
         }
 
         @SubscribeEvent
+        public static void registerMenuScreens(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent event) {
+            // The Arcane Alloy Anvil only changes the cost maths, so vanilla's anvil screen fits as-is.
+            event.register(com.cahcap.neoforge.common.registry.ModMenuTypes.ARCANE_ALLOY_ANVIL.get(),
+                    net.minecraft.client.gui.screens.inventory.AnvilScreen::new);
+        }
+
+        @SubscribeEvent
         public static void registerBlockEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
             // Block entity renderers
             event.registerBlockEntityRenderer(ModBlockEntities.HERB_CABINET.get(), HerbCabinetRenderer::new);

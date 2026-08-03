@@ -190,16 +190,16 @@ public class CraftingRecipes {
             .unlockedBy("has_lumistone_bricks", p.criterion(ModBlocks.LUMISTONE_BRICKS.get()))
             .save(output);
 
-        // ==================== Magic Alloy ====================
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGIC_ALLOY_BLOCK.get(), 1)
-            .define('M', ModItems.MAGIC_ALLOY_INGOT.get())
+        // ==================== Arcane Alloy ====================
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ARCANE_ALLOY_BLOCK.get(), 1)
+            .define('M', ModItems.ARCANE_ALLOY_INGOT.get())
             .pattern("MMM").pattern("MMM").pattern("MMM")
-            .unlockedBy("has_magic_alloy_ingot", p.criterion(ModItems.MAGIC_ALLOY_INGOT.get()))
+            .unlockedBy("has_arcane_alloy_ingot", p.criterion(ModItems.ARCANE_ALLOY_INGOT.get()))
             .save(output);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MAGIC_ALLOY_INGOT.get(), 9)
-            .requires(ModBlocks.MAGIC_ALLOY_BLOCK.get())
-            .unlockedBy("has_magic_alloy_block", p.criterion(ModBlocks.MAGIC_ALLOY_BLOCK.get()))
-            .save(output, "ous:magic_alloy_ingot_from_block");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ARCANE_ALLOY_INGOT.get(), 9)
+            .requires(ModBlocks.ARCANE_ALLOY_BLOCK.get())
+            .unlockedBy("has_arcane_alloy_block", p.criterion(ModBlocks.ARCANE_ALLOY_BLOCK.get()))
+            .save(output, "ous:arcane_alloy_ingot_from_block");
     }
 }

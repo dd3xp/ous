@@ -286,9 +286,9 @@ public class ModBlocks {
                     
                     .forceSolidOn()));
 
-    // ==================== Magic Alloy ====================
+    // ==================== Arcane Alloy ====================
 
-    public static final DeferredBlock<Block> MAGIC_ALLOY_BLOCK = registerBlock("magic_alloy_block",
+    public static final DeferredBlock<Block> ARCANE_ALLOY_BLOCK = registerBlock("arcane_alloy_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_PURPLE)
                     .requiresCorrectToolForDrops()
@@ -335,6 +335,29 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(com.cahcap.common.block.CrystalLanternBlock.LIT) ? 15 : 0)
                     .noOcclusion()));
+
+    // ==================== Arcane Alloy Anvil ====================
+    // Same properties as the vanilla anvil so falling, sounds and mining behaviour match.
+    private static BlockBehaviour.Properties anvilProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.METAL)
+                .requiresCorrectToolForDrops()
+                .strength(5.0F, 1200.0F)
+                .sound(SoundType.ANVIL)
+                .pushReaction(net.minecraft.world.level.material.PushReaction.BLOCK);
+    }
+
+    public static final DeferredBlock<com.cahcap.common.block.ArcaneAlloyAnvilBlock> ARCANE_ALLOY_ANVIL =
+            BLOCKS.register("arcane_alloy_anvil",
+                    () -> new com.cahcap.common.block.ArcaneAlloyAnvilBlock(anvilProperties()));
+
+    public static final DeferredBlock<com.cahcap.common.block.ArcaneAlloyAnvilBlock> CHIPPED_ARCANE_ALLOY_ANVIL =
+            BLOCKS.register("chipped_arcane_alloy_anvil",
+                    () -> new com.cahcap.common.block.ArcaneAlloyAnvilBlock(anvilProperties()));
+
+    public static final DeferredBlock<com.cahcap.common.block.ArcaneAlloyAnvilBlock> DAMAGED_ARCANE_ALLOY_ANVIL =
+            BLOCKS.register("damaged_arcane_alloy_anvil",
+                    () -> new com.cahcap.common.block.ArcaneAlloyAnvilBlock(anvilProperties()));
     
     public static final DeferredBlock<com.cahcap.neoforge.common.block.CauldronBlock> CAULDRON = BLOCKS.register("cauldron",
             () -> new com.cahcap.neoforge.common.block.CauldronBlock(Multiblock.addInteriorSpaceProperties(BlockBehaviour.Properties.of()

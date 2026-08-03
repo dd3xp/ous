@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ous:block/damaged_arcane_alloy_anvil" },
+    "facing=south": { "model": "ous:block/damaged_arcane_alloy_anvil", "y": 180 },
+    "facing=west":  { "model": "ous:block/damaged_arcane_alloy_anvil", "y": 270 },
+    "facing=east":  { "model": "ous:block/damaged_arcane_alloy_anvil", "y": 90 }
+  }
+}

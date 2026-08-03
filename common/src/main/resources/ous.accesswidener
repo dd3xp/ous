@@ -1,3 +1,7 @@
 accessWidener v2 named
 
 accessible field com/mojang/blaze3d/vertex/PoseStack$Pose trustedNormals Z
+
+# ArcaneAlloyAnvilMenu overrides createResult/onTake and needs the vanilla bookkeeping fields.
+accessible field net/minecraft/world/inventory/AnvilMenu cost Lnet/minecraft/world/inventory/DataSlot;
+accessible field net/minecraft/world/inventory/AnvilMenu repairItemCountCost I

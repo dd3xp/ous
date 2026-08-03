@@ -36,6 +36,9 @@ public class RegistryInit {
         ModRegistries.CAULDRON = () -> ModBlocks.CAULDRON.get();
         ModRegistries.HERB_POT = () -> ModBlocks.HERB_POT.get();
         ModRegistries.CRYSTAL_LANTERN = () -> ModBlocks.CRYSTAL_LANTERN.get();
+        ModRegistries.ARCANE_ALLOY_ANVIL = () -> ModBlocks.ARCANE_ALLOY_ANVIL.get();
+        ModRegistries.CHIPPED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get();
+        ModRegistries.DAMAGED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get();
         ModRegistries.INCENSE_BURNER = () -> ModBlocks.INCENSE_BURNER.get();
         ModRegistries.KILN = () -> ModBlocks.KILN.get();
         ModRegistries.HERB_VAULT = () -> ModBlocks.HERB_VAULT.get();
@@ -47,7 +50,7 @@ public class RegistryInit {
         ModRegistries.LUMISTONE_BRICK_SLAB = () -> ModBlocks.LUMISTONE_BRICK_SLAB.get();
         ModRegistries.LUMISTONE_BRICK_WALL = () -> ModBlocks.LUMISTONE_BRICK_WALL.get();
         ModRegistries.RUNE_STONE_BRICKS = () -> ModBlocks.RUNE_STONE_BRICKS.get();
-        ModRegistries.MAGIC_ALLOY_BLOCK = () -> ModBlocks.MAGIC_ALLOY_BLOCK.get();
+        ModRegistries.ARCANE_ALLOY_BLOCK = () -> ModBlocks.ARCANE_ALLOY_BLOCK.get();
         
         // Items
         ModRegistries.SCALEPLATE = () -> ModItems.SCALEPLATE.get();
@@ -110,6 +113,7 @@ public class RegistryInit {
         ModRegistries.CAULDRON_BE = () -> ModBlockEntities.CAULDRON.get();
         ModRegistries.HERB_POT_BE = () -> ModBlockEntities.HERB_POT.get();
         ModRegistries.CRYSTAL_LANTERN_BE = () -> ModBlockEntities.CRYSTAL_LANTERN.get();
+        ModRegistries.ARCANE_ALLOY_ANVIL_BE = () -> ModBlockEntities.ARCANE_ALLOY_ANVIL.get();
         ModRegistries.INCENSE_BURNER_BE = () -> ModBlockEntities.INCENSE_BURNER.get();
         ModRegistries.KILN_BE = () -> ModBlockEntities.KILN.get();
         ModRegistries.OBELISK_BE = () -> ModBlockEntities.OBELISK.get();

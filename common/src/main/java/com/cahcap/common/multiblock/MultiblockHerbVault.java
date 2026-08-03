@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.properties.SlabType;
  *
  * Layer y=0 (master layer):
  *   [RedCherryLog] [RedCherryFence (TRIGGER)][RedCherryLog]   ← front (z=0)
- *   [LumiBrickWall][MagicAlloyBlock (MASTER)][LumiBrickWall]
+ *   [LumiBrickWall][ArcaneAlloyBlock (MASTER)][LumiBrickWall]
  *   [RedCherryLog] [LumiBrickWall]           [RedCherryLog]   ← back (z=2)
  *
  * Layer y=1 (top):
@@ -42,7 +42,7 @@ public class MultiblockHerbVault {
             .define('B', state -> state.is(ModRegistries.LUMISTONE_BRICKS.get()))
             .define('L', state -> state.is(ModRegistries.RED_CHERRY_LOG.get()))
             .define('W', state -> state.is(ModRegistries.LUMISTONE_BRICK_WALL.get()))
-            .define('#', state -> state.is(ModRegistries.MAGIC_ALLOY_BLOCK.get()))
+            .define('#', state -> state.is(ModRegistries.ARCANE_ALLOY_BLOCK.get()))
             .define('F', state -> state.is(ModRegistries.RED_CHERRY_FENCE.get()))
             .define('S', state -> state.is(ModRegistries.LUMISTONE_BRICK_SLAB.get())
                     && state.hasProperty(SlabBlock.TYPE)
