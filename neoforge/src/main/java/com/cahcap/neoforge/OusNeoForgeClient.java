@@ -172,6 +172,8 @@ public class OusNeoForgeClient {
             event.register(new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath(mod, "block/workbench_tool_feather_quill"), "standalone"));
             event.register(new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath(mod, "block/workbench_tool_forge_hammer"), "standalone"));
             event.register(new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath(mod, "block/workbench_tool_woven_rope"), "standalone"));
+            // Lamp body is drawn by CrystalLanternRenderer, not by the blockstate model.
+            event.register(new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath(mod, "block/crystal_lantern_body"), "standalone"));
         }
 
         @SubscribeEvent
@@ -187,6 +189,7 @@ public class OusNeoForgeClient {
             event.registerBlockEntityRenderer(ModBlockEntities.HERB_VAULT.get(), HerbVaultRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.OBELISK.get(), ObeliskRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.HERB_BASKET.get(), HerbBasketRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.CRYSTAL_LANTERN.get(), com.cahcap.client.renderer.CrystalLanternRenderer::new);
 
             // Entity renderers
             event.registerEntityRenderer(ModEntityTypes.FLOWWEAVE_PROJECTILE.get(), FlowweaveProjectileRenderer::new);

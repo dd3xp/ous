@@ -36,6 +36,7 @@ public class ModRecipeProvider extends RecipeProvider {
         new IncenseBurningRecipes().build(output);
         new ObeliskOfferingRecipes().build(output);
         new KilnRecipes().build(output);
+        new CrystalLanternRecipes().build(output);
         new WorkbenchRecipes(lookupProvider).build(output);
     }
 }

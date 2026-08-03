@@ -174,6 +174,9 @@ public class ModItems {
     // Herb Pot - placeable cultivation block
     public static final DeferredItem<BlockItem> HERB_POT = ITEMS.register("herb_pot",
             () -> new BlockItem(ModBlocks.HERB_POT.get(), new Item.Properties()));
+
+    public static final DeferredItem<com.cahcap.common.item.CrystalLanternItem> CRYSTAL_LANTERN = ITEMS.register("crystal_lantern",
+            () -> new com.cahcap.common.item.CrystalLanternItem(ModBlocks.CRYSTAL_LANTERN.get(), new Item.Properties()));
     
     // Incense Burner - mob summoning block
     public static final DeferredItem<BlockItem> INCENSE_BURNER = ITEMS.register("incense_burner",

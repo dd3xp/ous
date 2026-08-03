@@ -6,6 +6,7 @@ import com.cahcap.common.recipe.CauldronInfusingRecipe;
 import com.cahcap.common.recipe.HerbalBlendingRecipe;
 import com.cahcap.common.recipe.HerbPotGrowingRecipe;
 import com.cahcap.common.recipe.IncenseBurningRecipe;
+import com.cahcap.common.recipe.CrystalLanternFuelRecipe;
 import com.cahcap.common.recipe.KilnCatalystRecipe;
 import com.cahcap.common.recipe.KilnSmeltingRecipe;
 import com.cahcap.common.recipe.ObeliskOfferingRecipe;
@@ -53,6 +54,7 @@ public class ModRegistries {
     public static Supplier<Block> WORKBENCH;
     public static Supplier<Block> CAULDRON;
     public static Supplier<Block> HERB_POT;
+    public static Supplier<Block> CRYSTAL_LANTERN;
     public static Supplier<Block> INCENSE_BURNER;
     public static Supplier<Block> KILN;
     public static Supplier<Block> HERB_VAULT;
@@ -125,6 +127,7 @@ public class ModRegistries {
     public static Supplier<BlockEntityType<?>> SHELF_BE;
     public static Supplier<BlockEntityType<?>> WORKBENCH_BE;
     public static Supplier<BlockEntityType<?>> CAULDRON_BE;
+    public static Supplier<BlockEntityType<?>> CRYSTAL_LANTERN_BE;
     public static Supplier<BlockEntityType<?>> HERB_POT_BE;
     public static Supplier<BlockEntityType<?>> INCENSE_BURNER_BE;
     public static Supplier<BlockEntityType<?>> KILN_BE;
@@ -142,6 +145,7 @@ public class ModRegistries {
     public static Supplier<RecipeSerializer<IncenseBurningRecipe>> INCENSE_BURNING_SERIALIZER;
     public static Supplier<RecipeType<KilnSmeltingRecipe>> KILN_SMELTING_RECIPE_TYPE;
     public static Supplier<RecipeType<KilnCatalystRecipe>> KILN_CATALYST_RECIPE_TYPE;
+    public static Supplier<RecipeType<CrystalLanternFuelRecipe>> CRYSTAL_LANTERN_FUEL_RECIPE_TYPE;
     public static Supplier<RecipeType<ObeliskOfferingRecipe>> OBELISK_OFFERING_RECIPE_TYPE;
     public static Supplier<RecipeSerializer<ObeliskOfferingRecipe>> OBELISK_OFFERING_SERIALIZER;
 

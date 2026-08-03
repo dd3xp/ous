@@ -20,6 +20,7 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
  */
 @EventBusSubscriber(modid = OusCommon.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class BlockColorHandler {
+
     
     @SubscribeEvent
     public static void registerBlockColors(RegisterColorHandlersEvent.Block event) {
@@ -33,6 +34,7 @@ public class BlockColorHandler {
         
         event.register(leavesColor, ModBlocks.RED_CHERRY_LEAVES.get());
         event.register(leavesColor, ModBlocks.RED_CHERRY_BUSH.get());
+
         
         // Crystal Plants - colored based on ore type (block placed in world)
         BlockColor crystPlantBlockColor = (state, level, pos, tintIndex) -> {
@@ -65,6 +67,11 @@ public class BlockColorHandler {
         
         event.register(leavesItemColor, ModBlocks.RED_CHERRY_LEAVES.get());
         event.register(leavesItemColor, ModBlocks.RED_CHERRY_BUSH.get());
+
+        // Crystal Lantern item - always shows the bound potion colour so stacks are tellable apart
+        ItemColor lanternItemColor = (stack, tintIndex) ->
+                tintIndex == 0 ? com.cahcap.common.item.CrystalLanternItem.getPotionColor(stack) : 0xFFFFFF;
+        event.register(lanternItemColor, ModBlocks.CRYSTAL_LANTERN.get());
         
         // Incense Powder - colored based on mob type
         ItemColor powderColor = (stack, tintIndex) -> {

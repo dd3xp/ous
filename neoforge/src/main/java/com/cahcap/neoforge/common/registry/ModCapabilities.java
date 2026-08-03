@@ -36,6 +36,15 @@ public class ModCapabilities {
     
     @SubscribeEvent
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+        // Register IItemHandler capability for CrystalLanternBlockEntity (insert-only)
+        event.registerBlockEntity(
+            Capabilities.ItemHandler.BLOCK,
+            ModBlockEntities.CRYSTAL_LANTERN.get(),
+            (blockEntity, context) -> blockEntity instanceof com.cahcap.common.blockentity.CrystalLanternBlockEntity lantern
+                    ? new com.cahcap.neoforge.common.handler.CrystalLanternItemHandler(lantern)
+                    : null
+        );
+
         // Register IItemHandler capability for HerbCabinetBlockEntity
         event.registerBlockEntity(
             Capabilities.ItemHandler.BLOCK,

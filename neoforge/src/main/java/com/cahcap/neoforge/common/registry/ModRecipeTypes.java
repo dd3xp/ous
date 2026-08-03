@@ -90,6 +90,14 @@ public class ModRecipeTypes {
                 }
             });
 
+    public static final DeferredHolder<RecipeType<?>, RecipeType<com.cahcap.common.recipe.CrystalLanternFuelRecipe>> CRYSTAL_LANTERN_FUEL =
+            RECIPE_TYPES.register("crystal_lantern_fuel", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return ResourceLocation.fromNamespaceAndPath(OusCommon.MOD_ID, "crystal_lantern_fuel").toString();
+                }
+            });
+
     public static final DeferredHolder<RecipeType<?>, RecipeType<ObeliskOfferingRecipe>> OBELISK_OFFERING =
             RECIPE_TYPES.register("obelisk_offering", () -> new RecipeType<>() {
                 @Override
@@ -115,6 +123,7 @@ public class ModRecipeTypes {
         ModRegistries.INCENSE_BURNING_RECIPE_TYPE = INCENSE_BURNING;
         ModRegistries.KILN_SMELTING_RECIPE_TYPE = KILN_SMELTING;
         ModRegistries.KILN_CATALYST_RECIPE_TYPE = KILN_CATALYST;
+        ModRegistries.CRYSTAL_LANTERN_FUEL_RECIPE_TYPE = CRYSTAL_LANTERN_FUEL;
         ModRegistries.OBELISK_OFFERING_RECIPE_TYPE = OBELISK_OFFERING;
     }
 }

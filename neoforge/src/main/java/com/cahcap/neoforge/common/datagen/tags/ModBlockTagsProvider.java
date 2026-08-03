@@ -98,6 +98,7 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
             ModBlocks.LUMISTONE_BRICK_STAIRS.get(),
             ModBlocks.CAULDRON.get(),
             ModBlocks.HERB_POT.get(),
+            ModBlocks.CRYSTAL_LANTERN.get(),
             ModBlocks.INCENSE_BURNER.get(),
             ModBlocks.KILN.get(),
             ModBlocks.LUMISTONE_BRICK_WALL.get(),

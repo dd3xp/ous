@@ -110,6 +110,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.SHELF.get());
                         output.accept(ModItems.WORKBENCH.get());
                         output.accept(ModItems.HERB_POT.get());
+                        // No recipe exists yet, so hand out a Speed-bound lantern for testing.
+                        // Replace with a plain accept() once the crafting recipe binds the effect.
+                        output.accept(createBoundLantern());
                         output.accept(ModItems.INCENSE_BURNER.get());
                         
                         output.accept(ModBlocks.MAGIC_ALLOY_BLOCK.get());
@@ -127,5 +130,18 @@ public class ModCreativeTabs {
                         output.accept(ModItems.FORGE_HAMMER.get());
                     })
                     .build());
+
+    /**
+     * Creative-tab Crystal Lantern, pre-bound to Speed. Without a recipe there is no other way
+     * to get a working lantern, and an unbound one neither lights up nor applies anything.
+     */
+    private static net.minecraft.world.item.ItemStack createBoundLantern() {
+        net.minecraft.world.item.ItemStack stack =
+                new net.minecraft.world.item.ItemStack(ModItems.CRYSTAL_LANTERN.get());
+        com.cahcap.common.item.CrystalLanternItem.setBinding(stack,
+                java.util.List.of("minecraft:speed"),
+                net.minecraft.world.effect.MobEffects.MOVEMENT_SPEED.value().getColor());
+        return stack;
+    }
 }
 

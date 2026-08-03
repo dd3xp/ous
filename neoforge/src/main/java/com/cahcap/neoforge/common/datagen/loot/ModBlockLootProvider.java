@@ -52,6 +52,7 @@ public class ModBlockLootProvider extends LootTableProvider {
             // Herb flower blocks
             this.dropSelf(ModBlocks.CRYSEL.get());
             this.dropSelf(ModBlocks.DORELLA.get());
+            this.dropSelf(ModBlocks.CRYSTAL_LANTERN.get());
             this.dropSelf(ModBlocks.PYRAZE.get());
             this.dropSelf(ModBlocks.STELLIA.get());
             this.dropSelf(ModBlocks.SCLERIS.get());

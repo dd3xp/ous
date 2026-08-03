@@ -56,6 +56,12 @@ public class ModBlockEntities {
                     HerbPotBlockEntity::new,
                     ModBlocks.HERB_POT.get()
             ).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.cahcap.common.blockentity.CrystalLanternBlockEntity>> CRYSTAL_LANTERN =
+            BLOCK_ENTITIES.register("crystal_lantern", () -> BlockEntityType.Builder.of(
+                    com.cahcap.common.blockentity.CrystalLanternBlockEntity::new,
+                    ModBlocks.CRYSTAL_LANTERN.get()
+            ).build(null));
     
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IncenseBurnerBlockEntity>> INCENSE_BURNER =
             BLOCK_ENTITIES.register("incense_burner", () -> BlockEntityType.Builder.of(

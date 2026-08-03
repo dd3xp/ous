@@ -35,6 +35,7 @@ public class RegistryInit {
         ModRegistries.WORKBENCH = () -> ModBlocks.WORKBENCH.get();
         ModRegistries.CAULDRON = () -> ModBlocks.CAULDRON.get();
         ModRegistries.HERB_POT = () -> ModBlocks.HERB_POT.get();
+        ModRegistries.CRYSTAL_LANTERN = () -> ModBlocks.CRYSTAL_LANTERN.get();
         ModRegistries.INCENSE_BURNER = () -> ModBlocks.INCENSE_BURNER.get();
         ModRegistries.KILN = () -> ModBlocks.KILN.get();
         ModRegistries.HERB_VAULT = () -> ModBlocks.HERB_VAULT.get();
@@ -108,6 +109,7 @@ public class RegistryInit {
         ModRegistries.WORKBENCH_BE = () -> ModBlockEntities.WORKBENCH.get();
         ModRegistries.CAULDRON_BE = () -> ModBlockEntities.CAULDRON.get();
         ModRegistries.HERB_POT_BE = () -> ModBlockEntities.HERB_POT.get();
+        ModRegistries.CRYSTAL_LANTERN_BE = () -> ModBlockEntities.CRYSTAL_LANTERN.get();
         ModRegistries.INCENSE_BURNER_BE = () -> ModBlockEntities.INCENSE_BURNER.get();
         ModRegistries.KILN_BE = () -> ModBlockEntities.KILN.get();
         ModRegistries.OBELISK_BE = () -> ModBlockEntities.OBELISK.get();

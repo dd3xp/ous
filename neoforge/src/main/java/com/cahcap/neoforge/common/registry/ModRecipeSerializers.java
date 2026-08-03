@@ -49,6 +49,9 @@ public class ModRecipeSerializers {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<KilnCatalystRecipe>> KILN_CATALYST =
             RECIPE_SERIALIZERS.register("kiln_catalyst", () -> KilnCatalystRecipe.Serializer.INSTANCE);
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<com.cahcap.common.recipe.CrystalLanternFuelRecipe>> CRYSTAL_LANTERN_FUEL =
+            RECIPE_SERIALIZERS.register("crystal_lantern_fuel", () -> com.cahcap.common.recipe.CrystalLanternFuelRecipe.Serializer.INSTANCE);
+
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<ObeliskOfferingRecipe>> OBELISK_OFFERING =
             RECIPE_SERIALIZERS.register("obelisk_offering", () -> ObeliskOfferingRecipe.Serializer.INSTANCE);
 

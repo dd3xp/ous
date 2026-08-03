@@ -326,6 +326,15 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD)
                     .noOcclusion()));
+
+    public static final DeferredBlock<com.cahcap.common.block.CrystalLanternBlock> CRYSTAL_LANTERN = BLOCKS.register("crystal_lantern",
+            () -> new com.cahcap.common.block.CrystalLanternBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .strength(1.0F, 3.0F)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(com.cahcap.common.block.CrystalLanternBlock.LIT) ? 15 : 0)
+                    .noOcclusion()));
     
     public static final DeferredBlock<com.cahcap.neoforge.common.block.CauldronBlock> CAULDRON = BLOCKS.register("cauldron",
             () -> new com.cahcap.neoforge.common.block.CauldronBlock(Multiblock.addInteriorSpaceProperties(BlockBehaviour.Properties.of()

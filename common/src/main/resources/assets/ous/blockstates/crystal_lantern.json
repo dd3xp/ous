@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "ous:block/crystal_lantern_frame" },
+    "lit=true": { "model": "ous:block/crystal_lantern_frame" }
+  }
+}
