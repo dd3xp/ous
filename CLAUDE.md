@@ -129,6 +129,12 @@ Position / mirrored / lit 等属性由 `BakedSplitModel.getQuads` 从 state 读,
 
 - loot 表、recipe、block/item/biome tag、worldgen (biome modifier) —— 都还在 NeoForge datagen 里,跑 `./gradlew :neoforge:runData`
 - datagen 输出到 `neoforge/src/main/generated/resources`,该目录**已 gitignore**,但参与打包(`sourceSets.main.resources.srcDir`)。换 mod id 或大改内容后要重跑。
+
+**`runData` 跑完后 JVM 不会自己退出。** `ModDataGenerator` 里挂了个守护线程 `Ous-datagen-exit-watcher`,等所有 provider future 完成后打印 `[Ous] data generation complete; forcing JVM exit.` 并 `System.exit(0)`。看到这行才算真的跑完。
+
+注意该看门狗有个洞:`if (snapshot.length == 0) return;` —— 一旦没有 provider 被登记(例如只跑客户端侧),它不会强制退出,JVM 会一直挂着。这时只能手动结束进程。
+
+另外别在跑 `runData` 前 `taskkill java.exe` —— 会连 Gradle daemon 一起杀掉,下次冷启动可能超过 10 分钟。
 - 模型相关的四件事(剥 rotation、split、voxelshape、blockstate)**全部运行时完成**,无需 datagen 也无需 buildSrc task
 
 ### AO 光照格子历史
