@@ -138,7 +138,7 @@ public class HerbVaultBlock extends MultiblockPartBlock {
 
     /**
      * Extract herbs on left-click via Block.attack().
-     * Called once when the player starts breaking (like Storage Drawers).
+     * Called once when the player starts breaking.
      */
     @Override
     protected void attack(BlockState state, Level level, BlockPos pos, Player player) {

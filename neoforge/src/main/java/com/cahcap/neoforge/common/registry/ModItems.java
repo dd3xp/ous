@@ -184,6 +184,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(), new Item.Properties()));
     public static final DeferredItem<BlockItem> DAMAGED_ARCANE_ALLOY_ANVIL = ITEMS.register("damaged_arcane_alloy_anvil",
             () -> new BlockItem(ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> ARCANE_ALLOY_HOPPER = ITEMS.register("arcane_alloy_hopper",
+            () -> new BlockItem(ModBlocks.ARCANE_ALLOY_HOPPER.get(), new Item.Properties()));
     
     // Incense Burner - mob summoning block
     public static final DeferredItem<BlockItem> INCENSE_BURNER = ITEMS.register("incense_burner",

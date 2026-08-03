@@ -134,7 +134,7 @@ public class HerbCabinetBlock extends MultiblockPartBlock {
 
     /**
      * Extract herbs on left-click via Block.attack().
-     * Called once when the player starts breaking (like Storage Drawers).
+     * Called once when the player starts breaking.
      * In survival mode the block enters "breaking" state normally; subsequent
      * ticks go through continueDestroyBlock which does NOT call attack() again,
      * so extraction only happens once per click.

@@ -358,6 +358,15 @@ public class ModBlocks {
     public static final DeferredBlock<com.cahcap.common.block.ArcaneAlloyAnvilBlock> DAMAGED_ARCANE_ALLOY_ANVIL =
             BLOCKS.register("damaged_arcane_alloy_anvil",
                     () -> new com.cahcap.common.block.ArcaneAlloyAnvilBlock(anvilProperties()));
+
+    public static final DeferredBlock<com.cahcap.common.block.ArcaneAlloyHopperBlock> ARCANE_ALLOY_HOPPER =
+            BLOCKS.register("arcane_alloy_hopper",
+                    () -> new com.cahcap.common.block.ArcaneAlloyHopperBlock(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.STONE)
+                            .requiresCorrectToolForDrops()
+                            .strength(3.0F, 4.8F)
+                            .sound(SoundType.METAL)
+                            .noOcclusion()));
     
     public static final DeferredBlock<com.cahcap.neoforge.common.block.CauldronBlock> CAULDRON = BLOCKS.register("cauldron",
             () -> new com.cahcap.neoforge.common.block.CauldronBlock(Multiblock.addInteriorSpaceProperties(BlockBehaviour.Properties.of()

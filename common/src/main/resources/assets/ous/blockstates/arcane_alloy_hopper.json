@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=down":  { "model": "ous:block/arcane_alloy_hopper" },
+    "facing=north": { "model": "ous:block/arcane_alloy_hopper_side" },
+    "facing=south": { "model": "ous:block/arcane_alloy_hopper_side", "y": 180 },
+    "facing=west":  { "model": "ous:block/arcane_alloy_hopper_side", "y": 270 },
+    "facing=east":  { "model": "ous:block/arcane_alloy_hopper_side", "y": 90 }
+  }
+}

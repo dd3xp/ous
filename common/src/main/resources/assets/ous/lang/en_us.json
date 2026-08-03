@@ -110,5 +110,6 @@
   "tooltip.ous.crystal_lantern.dewpetal": "Dewpetal: %s",
   "block.ous.arcane_alloy_anvil": "Arcane Alloy Anvil",
   "block.ous.chipped_arcane_alloy_anvil": "Chipped Arcane Alloy Anvil",
-  "block.ous.damaged_arcane_alloy_anvil": "Damaged Arcane Alloy Anvil"
+  "block.ous.damaged_arcane_alloy_anvil": "Damaged Arcane Alloy Anvil",
+  "block.ous.arcane_alloy_hopper": "Arcane Alloy Hopper"
 }

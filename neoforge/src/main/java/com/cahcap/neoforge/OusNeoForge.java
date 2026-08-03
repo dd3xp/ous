@@ -32,6 +32,7 @@ public class OusNeoForge {
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         ModMenuTypes.MENU_TYPES.register(modEventBus);
+        modEventBus.addListener(OusNeoForge::addHopperBlockEntityBlocks);
         ModSounds.SOUNDS.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
         
@@ -63,6 +64,17 @@ public class OusNeoForge {
 
         OusCommon.commonSetup();
         LOGGER.info("Once Upon a Season NeoForge common setup complete");
+    }
+
+    /**
+     * The Arcane Alloy Hopper reuses vanilla's HopperBlockEntity, whose only constructor hardcodes
+     * BlockEntityType.HOPPER. Register the block against that type or creating the block entity
+     * fails validation.
+     */
+    private static void addHopperBlockEntityBlocks(
+            net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent event) {
+        event.modify(net.minecraft.world.level.block.entity.BlockEntityType.HOPPER,
+                ModBlocks.ARCANE_ALLOY_HOPPER.get());
     }
 }
 

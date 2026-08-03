@@ -58,6 +58,7 @@ public class ModRegistries {
     public static Supplier<Block> ARCANE_ALLOY_ANVIL;
     public static Supplier<Block> CHIPPED_ARCANE_ALLOY_ANVIL;
     public static Supplier<Block> DAMAGED_ARCANE_ALLOY_ANVIL;
+    public static Supplier<Block> ARCANE_ALLOY_HOPPER;
     public static Supplier<Block> INCENSE_BURNER;
     public static Supplier<Block> KILN;
     public static Supplier<Block> HERB_VAULT;

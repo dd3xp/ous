@@ -39,6 +39,7 @@ public class RegistryInit {
         ModRegistries.ARCANE_ALLOY_ANVIL = () -> ModBlocks.ARCANE_ALLOY_ANVIL.get();
         ModRegistries.CHIPPED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get();
         ModRegistries.DAMAGED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get();
+        ModRegistries.ARCANE_ALLOY_HOPPER = () -> ModBlocks.ARCANE_ALLOY_HOPPER.get();
         ModRegistries.INCENSE_BURNER = () -> ModBlocks.INCENSE_BURNER.get();
         ModRegistries.KILN = () -> ModBlocks.KILN.get();
         ModRegistries.HERB_VAULT = () -> ModBlocks.HERB_VAULT.get();

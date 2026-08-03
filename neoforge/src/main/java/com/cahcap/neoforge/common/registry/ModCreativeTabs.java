@@ -114,6 +114,7 @@ public class ModCreativeTabs {
                         // Replace with a plain accept() once the crafting recipe binds the effect.
                         output.accept(createBoundLantern());
                         output.accept(ModItems.ARCANE_ALLOY_ANVIL.get());
+                        output.accept(ModItems.ARCANE_ALLOY_HOPPER.get());
                         output.accept(ModItems.INCENSE_BURNER.get());
                         
                         output.accept(ModBlocks.ARCANE_ALLOY_BLOCK.get());

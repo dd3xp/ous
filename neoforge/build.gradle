@@ -30,9 +30,9 @@ loom {
     runs {
         datagen {
             data()
-            // 独立运行目录：不能和 runClient 共用 neoforge/run，否则 run/mods 里整合包的
-            // 客户端 mod 也会被 data 运行加载。MouseTweaks 会因此 NPE
-            // (yalter.mousetweaks.Main.mc is null) 直接崩掉整个 datagen。
+            // 独立运行目录：不能和 runClient 共用 neoforge/run，否则 run/mods 里的整合包
+            // mod 也会被 data 运行加载，其中只在客户端可用的那些会因为拿不到客户端实例
+            // 而 NPE，直接崩掉整个 datagen。
             runDir 'build/datagen-run'
             programArg '--all'
             programArg '--mod'
