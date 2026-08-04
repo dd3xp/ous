@@ -190,6 +190,11 @@ public class ModItems {
 
     public static final DeferredItem<BlockItem> COSMOS_CHEST = ITEMS.register("cosmos_chest",
             () -> new BlockItem(ModBlocks.COSMOS_CHEST.get(), new Item.Properties()));
+
+    public static final DeferredItem<com.cahcap.common.item.StarryCakeItem> STARRY_CAKE =
+            ITEMS.register("starry_cake",
+                    () -> new com.cahcap.common.item.StarryCakeItem(ModBlocks.STARRY_CAKE.get(),
+                            new Item.Properties().stacksTo(1)));
     
     // Incense Burner - mob summoning block
     public static final DeferredItem<BlockItem> INCENSE_BURNER = ITEMS.register("incense_burner",

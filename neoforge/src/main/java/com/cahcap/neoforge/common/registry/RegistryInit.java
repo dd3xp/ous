@@ -41,6 +41,7 @@ public class RegistryInit {
         ModRegistries.DAMAGED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get();
         ModRegistries.ARCANE_ALLOY_HOPPER = () -> ModBlocks.ARCANE_ALLOY_HOPPER.get();
         ModRegistries.COSMOS_CHEST = () -> ModBlocks.COSMOS_CHEST.get();
+        ModRegistries.STARRY_CAKE = () -> ModBlocks.STARRY_CAKE.get();
         ModRegistries.INCENSE_BURNER = () -> ModBlocks.INCENSE_BURNER.get();
         ModRegistries.KILN = () -> ModBlocks.KILN.get();
         ModRegistries.HERB_VAULT = () -> ModBlocks.HERB_VAULT.get();
@@ -117,6 +118,7 @@ public class RegistryInit {
         ModRegistries.CRYSTAL_LANTERN_BE = () -> ModBlockEntities.CRYSTAL_LANTERN.get();
         ModRegistries.ARCANE_ALLOY_ANVIL_BE = () -> ModBlockEntities.ARCANE_ALLOY_ANVIL.get();
         ModRegistries.COSMOS_CHEST_BE = () -> ModBlockEntities.COSMOS_CHEST.get();
+        ModRegistries.STARRY_CAKE_BE = () -> ModBlockEntities.STARRY_CAKE.get();
         ModRegistries.COSMOS_CHEST_MENU = () -> ModMenuTypes.COSMOS_CHEST.get();
         ModRegistries.INCENSE_BURNER_BE = () -> ModBlockEntities.INCENSE_BURNER.get();
         ModRegistries.KILN_BE = () -> ModBlockEntities.KILN.get();

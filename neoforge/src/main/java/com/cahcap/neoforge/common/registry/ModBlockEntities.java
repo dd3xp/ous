@@ -76,6 +76,12 @@ public class ModBlockEntities {
                     com.cahcap.common.blockentity.CosmosChestBlockEntity::new,
                     ModBlocks.COSMOS_CHEST.get()
             ).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.cahcap.common.blockentity.StarryCakeBlockEntity>> STARRY_CAKE =
+            BLOCK_ENTITIES.register("starry_cake", () -> BlockEntityType.Builder.of(
+                    com.cahcap.common.blockentity.StarryCakeBlockEntity::new,
+                    ModBlocks.STARRY_CAKE.get()
+            ).build(null));
     
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IncenseBurnerBlockEntity>> INCENSE_BURNER =
             BLOCK_ENTITIES.register("incense_burner", () -> BlockEntityType.Builder.of(

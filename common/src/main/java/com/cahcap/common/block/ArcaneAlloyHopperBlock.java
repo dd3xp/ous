@@ -5,6 +5,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.HopperBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -40,6 +43,28 @@ public class ArcaneAlloyHopperBlock extends HopperBlock {
     }
 
     @Nullable
+    /**
+     * Opens the menu with our own title. Vanilla's {@code useWithoutItem} calls
+     * {@code player.openMenu(blockEntity)} directly rather than going through
+     * {@code getMenuProvider}, and the block entity is vanilla's, so its title would read "Hopper".
+     */
+    @Override
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
+                                               Player player, BlockHitResult hitResult) {
+        if (level.isClientSide) {
+            return InteractionResult.SUCCESS;
+        }
+        if (level.getBlockEntity(pos) instanceof HopperBlockEntity hopper) {
+            player.openMenu(new net.minecraft.world.SimpleMenuProvider(
+                    (id, inventory, p) ->
+                            new net.minecraft.world.inventory.HopperMenu(id, inventory, hopper),
+                    net.minecraft.network.chat.Component.translatable(
+                            "block.ous.arcane_alloy_hopper")));
+            player.awardStat(net.minecraft.stats.Stats.INSPECT_HOPPER);
+        }
+        return InteractionResult.CONSUME;
+    }
+
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state,
                                                                   BlockEntityType<T> type) {

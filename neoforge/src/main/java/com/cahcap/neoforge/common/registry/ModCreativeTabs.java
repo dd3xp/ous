@@ -116,6 +116,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ARCANE_ALLOY_ANVIL.get());
                         output.accept(ModItems.ARCANE_ALLOY_HOPPER.get());
                         output.accept(ModItems.COSMOS_CHEST.get());
+                        output.accept(ModItems.STARRY_CAKE.get());
                         output.accept(ModItems.INCENSE_BURNER.get());
                         
                         output.accept(ModBlocks.ARCANE_ALLOY_BLOCK.get());

@@ -28,6 +28,11 @@ loom {
     accessWidenerPath = project(':common').loom.accessWidenerPath
     
     runs {
+        client {
+            // Default dev username is "Dev"; use the author's handle instead.
+            programArgs '--username', 'dd3xp'
+        }
+
         datagen {
             data()
             // 独立运行目录：不能和 runClient 共用 neoforge/run，否则 run/mods 里的整合包

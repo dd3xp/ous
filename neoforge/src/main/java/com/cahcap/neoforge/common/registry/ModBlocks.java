@@ -368,6 +368,15 @@ public class ModBlocks {
                             .sound(SoundType.METAL)
                             .noOcclusion()));
 
+    public static final DeferredBlock<com.cahcap.common.block.StarryCakeBlock> STARRY_CAKE =
+            BLOCKS.register("starry_cake",
+                    () -> new com.cahcap.common.block.StarryCakeBlock(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_PURPLE)
+                            // Brilliant Gem in the batter: shrugs off blasts like obsidian.
+                            .strength(0.5F, 1200.0F)
+                            .sound(SoundType.WOOL)
+                            .noOcclusion()));
+
     public static final DeferredBlock<com.cahcap.common.block.CosmosChestBlock> COSMOS_CHEST =
             BLOCKS.register("cosmos_chest",
                     () -> new com.cahcap.common.block.CosmosChestBlock(BlockBehaviour.Properties.of()

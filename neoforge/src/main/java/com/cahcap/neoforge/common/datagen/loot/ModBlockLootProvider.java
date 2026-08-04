@@ -58,6 +58,8 @@ public class ModBlockLootProvider extends LootTableProvider {
             this.dropSelf(ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get());
             this.dropSelf(ModBlocks.ARCANE_ALLOY_HOPPER.get());
             this.dropSelf(ModBlocks.COSMOS_CHEST.get());
+            // Progress-carrying drop is built in StarryCakeBlock.getDrops.
+            this.dropSelf(ModBlocks.STARRY_CAKE.get());
             this.dropSelf(ModBlocks.PYRAZE.get());
             this.dropSelf(ModBlocks.STELLIA.get());
             this.dropSelf(ModBlocks.SCLERIS.get());
