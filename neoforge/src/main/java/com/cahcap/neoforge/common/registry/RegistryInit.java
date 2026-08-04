@@ -40,6 +40,7 @@ public class RegistryInit {
         ModRegistries.CHIPPED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get();
         ModRegistries.DAMAGED_ARCANE_ALLOY_ANVIL = () -> ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get();
         ModRegistries.ARCANE_ALLOY_HOPPER = () -> ModBlocks.ARCANE_ALLOY_HOPPER.get();
+        ModRegistries.COSMOS_CHEST = () -> ModBlocks.COSMOS_CHEST.get();
         ModRegistries.INCENSE_BURNER = () -> ModBlocks.INCENSE_BURNER.get();
         ModRegistries.KILN = () -> ModBlocks.KILN.get();
         ModRegistries.HERB_VAULT = () -> ModBlocks.HERB_VAULT.get();
@@ -115,6 +116,8 @@ public class RegistryInit {
         ModRegistries.HERB_POT_BE = () -> ModBlockEntities.HERB_POT.get();
         ModRegistries.CRYSTAL_LANTERN_BE = () -> ModBlockEntities.CRYSTAL_LANTERN.get();
         ModRegistries.ARCANE_ALLOY_ANVIL_BE = () -> ModBlockEntities.ARCANE_ALLOY_ANVIL.get();
+        ModRegistries.COSMOS_CHEST_BE = () -> ModBlockEntities.COSMOS_CHEST.get();
+        ModRegistries.COSMOS_CHEST_MENU = () -> ModMenuTypes.COSMOS_CHEST.get();
         ModRegistries.INCENSE_BURNER_BE = () -> ModBlockEntities.INCENSE_BURNER.get();
         ModRegistries.KILN_BE = () -> ModBlockEntities.KILN.get();
         ModRegistries.OBELISK_BE = () -> ModBlockEntities.OBELISK.get();

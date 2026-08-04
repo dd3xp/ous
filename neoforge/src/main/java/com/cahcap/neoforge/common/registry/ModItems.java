@@ -187,6 +187,9 @@ public class ModItems {
 
     public static final DeferredItem<BlockItem> ARCANE_ALLOY_HOPPER = ITEMS.register("arcane_alloy_hopper",
             () -> new BlockItem(ModBlocks.ARCANE_ALLOY_HOPPER.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> COSMOS_CHEST = ITEMS.register("cosmos_chest",
+            () -> new BlockItem(ModBlocks.COSMOS_CHEST.get(), new Item.Properties()));
     
     // Incense Burner - mob summoning block
     public static final DeferredItem<BlockItem> INCENSE_BURNER = ITEMS.register("incense_burner",

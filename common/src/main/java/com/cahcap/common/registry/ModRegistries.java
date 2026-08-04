@@ -59,6 +59,7 @@ public class ModRegistries {
     public static Supplier<Block> CHIPPED_ARCANE_ALLOY_ANVIL;
     public static Supplier<Block> DAMAGED_ARCANE_ALLOY_ANVIL;
     public static Supplier<Block> ARCANE_ALLOY_HOPPER;
+    public static Supplier<Block> COSMOS_CHEST;
     public static Supplier<Block> INCENSE_BURNER;
     public static Supplier<Block> KILN;
     public static Supplier<Block> HERB_VAULT;
@@ -133,6 +134,8 @@ public class ModRegistries {
     public static Supplier<BlockEntityType<?>> CAULDRON_BE;
     public static Supplier<BlockEntityType<?>> CRYSTAL_LANTERN_BE;
     public static Supplier<BlockEntityType<?>> ARCANE_ALLOY_ANVIL_BE;
+    public static Supplier<BlockEntityType<com.cahcap.common.blockentity.CosmosChestBlockEntity>> COSMOS_CHEST_BE;
+    public static Supplier<net.minecraft.world.inventory.MenuType<com.cahcap.common.inventory.CosmosChestMenu>> COSMOS_CHEST_MENU;
     public static Supplier<BlockEntityType<?>> HERB_POT_BE;
     public static Supplier<BlockEntityType<?>> INCENSE_BURNER_BE;
     public static Supplier<BlockEntityType<?>> KILN_BE;

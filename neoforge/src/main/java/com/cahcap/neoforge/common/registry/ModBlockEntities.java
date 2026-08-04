@@ -70,6 +70,12 @@ public class ModBlockEntities {
                     ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(),
                     ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get()
             ).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.cahcap.common.blockentity.CosmosChestBlockEntity>> COSMOS_CHEST =
+            BLOCK_ENTITIES.register("cosmos_chest", () -> BlockEntityType.Builder.of(
+                    com.cahcap.common.blockentity.CosmosChestBlockEntity::new,
+                    ModBlocks.COSMOS_CHEST.get()
+            ).build(null));
     
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IncenseBurnerBlockEntity>> INCENSE_BURNER =
             BLOCK_ENTITIES.register("incense_burner", () -> BlockEntityType.Builder.of(

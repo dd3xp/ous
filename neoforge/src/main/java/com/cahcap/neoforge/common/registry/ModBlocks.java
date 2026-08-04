@@ -367,6 +367,16 @@ public class ModBlocks {
                             .strength(3.0F, 4.8F)
                             .sound(SoundType.METAL)
                             .noOcclusion()));
+
+    public static final DeferredBlock<com.cahcap.common.block.CosmosChestBlock> COSMOS_CHEST =
+            BLOCKS.register("cosmos_chest",
+                    () -> new com.cahcap.common.block.CosmosChestBlock(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_PURPLE)
+                            .requiresCorrectToolForDrops()
+                            // Brilliant Gem is hard enough to shrug off blasts: obsidian tier.
+                            .strength(5.0F, 1200.0F)
+                            .sound(SoundType.STONE)
+                            .noOcclusion()));
     
     public static final DeferredBlock<com.cahcap.neoforge.common.block.CauldronBlock> CAULDRON = BLOCKS.register("cauldron",
             () -> new com.cahcap.neoforge.common.block.CauldronBlock(Multiblock.addInteriorSpaceProperties(BlockBehaviour.Properties.of()

@@ -57,6 +57,7 @@ public class ModBlockLootProvider extends LootTableProvider {
             this.dropSelf(ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get());
             this.dropSelf(ModBlocks.DAMAGED_ARCANE_ALLOY_ANVIL.get());
             this.dropSelf(ModBlocks.ARCANE_ALLOY_HOPPER.get());
+            this.dropSelf(ModBlocks.COSMOS_CHEST.get());
             this.dropSelf(ModBlocks.PYRAZE.get());
             this.dropSelf(ModBlocks.STELLIA.get());
             this.dropSelf(ModBlocks.SCLERIS.get());

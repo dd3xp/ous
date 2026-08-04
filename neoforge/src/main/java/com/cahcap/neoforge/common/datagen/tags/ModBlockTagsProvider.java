@@ -91,6 +91,7 @@ public class ModBlockTagsProvider extends net.neoforged.neoforge.common.data.Blo
         
         // minecraft:mineable/pickaxe - Blocks mineable with pickaxe
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                ModBlocks.COSMOS_CHEST.get(),
                 ModBlocks.ARCANE_ALLOY_HOPPER.get(),
                 ModBlocks.ARCANE_ALLOY_ANVIL.get(),
                 ModBlocks.CHIPPED_ARCANE_ALLOY_ANVIL.get(),

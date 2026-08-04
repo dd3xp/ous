@@ -15,5 +15,9 @@ public class ModMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<com.cahcap.common.inventory.ArcaneAlloyAnvilMenu>> ARCANE_ALLOY_ANVIL =
             MENU_TYPES.register("arcane_alloy_anvil",
                     () -> new MenuType<>(com.cahcap.common.inventory.ArcaneAlloyAnvilMenu::new, FeatureFlags.VANILLA_SET));
+
+    public static final DeferredHolder<MenuType<?>, MenuType<com.cahcap.common.inventory.CosmosChestMenu>> COSMOS_CHEST =
+            MENU_TYPES.register("cosmos_chest",
+                    () -> new MenuType<>(com.cahcap.common.inventory.CosmosChestMenu::new, FeatureFlags.VANILLA_SET));
 }
 

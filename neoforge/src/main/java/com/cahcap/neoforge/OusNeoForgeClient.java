@@ -181,6 +181,8 @@ public class OusNeoForgeClient {
             // The Arcane Alloy Anvil only changes the cost maths, so vanilla's anvil screen fits as-is.
             event.register(com.cahcap.neoforge.common.registry.ModMenuTypes.ARCANE_ALLOY_ANVIL.get(),
                     net.minecraft.client.gui.screens.inventory.AnvilScreen::new);
+            event.register(com.cahcap.neoforge.common.registry.ModMenuTypes.COSMOS_CHEST.get(),
+                    com.cahcap.neoforge.client.screen.CosmosChestScreen::new);
         }
 
         @SubscribeEvent
@@ -196,6 +198,8 @@ public class OusNeoForgeClient {
             event.registerBlockEntityRenderer(ModBlockEntities.HERB_VAULT.get(), HerbVaultRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.OBELISK.get(), ObeliskRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.HERB_BASKET.get(), HerbBasketRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.COSMOS_CHEST.get(),
+                    com.cahcap.client.renderer.CosmosChestRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.CRYSTAL_LANTERN.get(), com.cahcap.client.renderer.CrystalLanternRenderer::new);
 
             // Entity renderers
@@ -251,6 +255,20 @@ public class OusNeoForgeClient {
                 }
             };
             event.registerItem(herbBoxExtensions, ModItems.HERB_BOX.get());
+
+            // Cosmos Chest — the block has no static model, so the item needs its own renderer
+            IClientItemExtensions cosmosChestExtensions = new IClientItemExtensions() {
+                private com.cahcap.neoforge.client.renderer.CosmosChestItemRenderer renderer;
+
+                @Override
+                public @NotNull net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                    if (renderer == null) {
+                        renderer = new com.cahcap.neoforge.client.renderer.CosmosChestItemRenderer();
+                    }
+                    return renderer;
+                }
+            };
+            event.registerItem(cosmosChestExtensions, ModItems.COSMOS_CHEST.get());
         }
     }
 }
