@@ -46,6 +46,7 @@ public class ModCreativeTabs {
                         // Red Cherry Items
                         output.accept(ModItems.RED_CHERRY_STICK.get());
                         output.accept(ModItems.RED_CHERRY.get());
+                        output.accept(ModItems.SYLVAN_CHERRY.get());
                         
                         // Herb Flowers
                         output.accept(ModBlocks.SCLERIS.get());

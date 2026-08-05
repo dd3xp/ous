@@ -69,6 +69,15 @@ public class ModItems {
                             .fast()
                             .build())));
 
+    // Improved red cherry; summoning logic comes with the Sylvana entity later.
+    public static final DeferredItem<Item> SYLVAN_CHERRY = ITEMS.register("sylvan_cherry",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.5F)
+                            .fast()
+                            .build())));
+
     // ==================== Leafweave Armor ====================
     
     public static final DeferredItem<ArmorItem> LEAFWEAVE_HELMET = ITEMS.register("leafweave_helmet",
