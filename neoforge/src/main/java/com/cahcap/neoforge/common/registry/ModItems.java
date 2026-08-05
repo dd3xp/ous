@@ -47,7 +47,7 @@ public class ModItems {
     // Plate materials (crafting intermediates for armor sets)
     public static final DeferredItem<Item> LEATHER_PLATE = ITEMS.registerSimpleItem("leather_plate");
     public static final DeferredItem<Item> VELVET_PLATE = ITEMS.registerSimpleItem("velvet_plate");
-    public static final DeferredItem<Item> SILK_PLATE = ITEMS.registerSimpleItem("silk_plate");
+    public static final DeferredItem<Item> COTTON_PLATE = ITEMS.registerSimpleItem("cotton_plate");
     
     // Arcane Alloy materials
     public static final DeferredItem<Item> ARCANE_ALLOY_DUST = ITEMS.registerSimpleItem("arcane_alloy_dust");

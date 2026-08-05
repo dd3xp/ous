@@ -37,7 +37,7 @@ public class ModCreativeTabs {
                         // Crafting Materials
                         output.accept(ModItems.LEATHER_PLATE.get());
                         output.accept(ModItems.VELVET_PLATE.get());
-                        output.accept(ModItems.SILK_PLATE.get());
+                        output.accept(ModItems.COTTON_PLATE.get());
                         output.accept(ModItems.ARCANE_ALLOY_DUST.get());
                         output.accept(ModItems.ARCANE_ALLOY_INGOT.get());
                         output.accept(ModItems.BRILLIANT_GEM_DUST.get());
